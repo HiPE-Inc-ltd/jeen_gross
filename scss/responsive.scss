@@ -1,0 +1,75 @@
+$grid-breakpoints: (xs: 0,
+    sm: 768px,
+    md: 992px,
+    lg: 1366px,
+    xl: 1920px);
+
+$container-max-widths: (sm: 720px,
+    md: 930px,
+    l: 1000px,
+    lg: 1280px,
+    xl: 1800px);
+
+@function get-breakpoints($key: "") {
+    @return map-get($grid-breakpoints, $key);
+}
+
+@function get-width($key: "") {
+    @return map-get($container-max-widths, $key);
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1600px),
+(max-width: get-breakpoints("lg")) {
+    .primary {
+        &__section-landing {
+
+            &__social {
+                width: get-width("lg");
+            }
+
+            &__nav {
+                width: get-width("lg");
+
+                &__branding {}
+
+                &__navigation {}
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1280px),
+(max-width: get-breakpoints("md")) {
+    .primary {
+        &__section-landing {
+            &__nav {
+                display: block;
+                width: get-width("md");
+
+                &__branding {
+                    display: block;
+                    margin: auto;
+                }
+
+                &__navigation {
+                    display: block;
+                    margin: auto;
+                }
+            }
+
+            &__social {
+                width: get-width("md");
+
+                &__icon {
+                    right: 30px;
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+}
