@@ -1,0 +1,22 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1600px), (max-width: 1366px) {
+  .primary__section-landing__social {
+    width: 1280px; }
+  .primary__section-landing__nav {
+    width: 1280px; } }
+
+@media only screen and (max-width: 1280px), (max-width: 992px) {
+  .primary__section-landing__nav {
+    display: block;
+    width: 930px; }
+    .primary__section-landing__nav__branding {
+      display: block;
+      margin: auto; }
+    .primary__section-landing__nav__navigation {
+      display: block;
+      margin: auto; }
+  .primary__section-landing__social {
+    width: 930px; }
+    .primary__section-landing__social__icon {
+      right: 30px;
+      bottom: 0px; } }
