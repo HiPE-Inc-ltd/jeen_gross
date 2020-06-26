@@ -55,7 +55,7 @@ $base-font-regular: "Montserrat-Regular";
         position: relative;
         top: 0px;
         left: 0px;
-        animation: slide 40s infinite;
+        animation: slide 20s infinite;
 
         @keyframes slide {
             25% {
@@ -91,7 +91,7 @@ $base-font-regular: "Montserrat-Regular";
             top: 0;
             left: 0;
             width: 100%;
-            height: 50%;
+            height: 100%;
             filter: blur(8px);
             -webkit-filter: blur(8px);
         }
