@@ -34,7 +34,9 @@ $container-max-widths: (sm: 720px,
             &__nav {
                 width: get-width("lg");
 
-                &__branding {}
+                &__branding {
+                margin-left: 0;
+                }
 
                 &__navigation {}
             }
@@ -66,8 +68,8 @@ $container-max-widths: (sm: 720px,
                 width: get-width("md");
 
                 &__icon {
-                    right: 30px;
-                    bottom: 0px;
+                    margin: auto;
+                    position: static;
                 }
             }
         }

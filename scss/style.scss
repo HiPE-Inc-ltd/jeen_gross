@@ -112,28 +112,28 @@ $container-max-widths: (sm: 720px,
 
         @keyframes slide {
             25% {
-               background: url("../../images/top_img_7.jpg");
+                background: url("../../images/top_img_7.jpg");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
 
             50% {
-              background: url("../../images/top_img_3.jpg");
+                background: url("../../images/top_img_3.jpg");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
 
             75% {
-               background: url("../../images/top_img_4.jpg");
+                background: url("../../images/top_img_4.jpg");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
 
             100% {
-               background: url("../../images/top_img_1.jpg");
+                background: url("../../images/top_img_1.jpg");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -366,7 +366,79 @@ $container-max-widths: (sm: 720px,
     &__section-services {
         position: relative;
         display: grid;
+        margin: 200px 0 0;
+        padding: 70px 0;
+        background-color: $container-color02;
 
+        &__container {
+            margin: 0 auto;
+            width: get-width("xl");
+            display: flex;
+
+            .card--container {
+                margin: 0 auto;
+                display: flex;
+
+                .card {
+                    background-color: $container-color;
+                    //border: 2px solid $background-color;
+                    width: 450px;
+                    height: 550px;
+                    margin: 0 20px;
+                    // -webkit-box-shadow: 0px 10px 28px -9px rgba(80, 64, 55, 0.63);
+                    // -moz-box-shadow: 0px 10px 28px -9px rgba(80, 64, 55, 0.63);
+                    // box-shadow: 0px 10px 28px -9px rgba(80, 64, 55, 0.63);
+
+                    &--store {}
+
+                    &--ship {}
+
+                    &--craft {}
+
+                    .card-pic {
+                        margin-top: 40px;
+                        width: 100%;
+                        display: flex;
+
+                        img {
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .card-title {
+                        margin-top: 80px;
+                        text-align: center;
+                        height: 60px;
+
+                        h4 {
+                            font-size: 30px;
+                            color: $background-color;
+
+                            &::after {
+                                content: ' ';
+                                display: block;
+                                width: 50px;
+                                height: 3px;
+                                margin: 8px auto;
+                                background-color: #b18857;
+                            }
+                        }
+                    }
+
+                    .card-desc {
+                        text-align: center;
+                        height: 50px;
+                        padding: 30px 60px;
+                        p {
+                            font-size: 10px;
+                            color: $background-color;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 
 }
