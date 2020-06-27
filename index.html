@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <title>artisan</title>
-  </head>
-  <body>
-    <div class="primary">
-      <div class="primary__section-landing">
-        <div class="primary__section-landing--overlay"></div>
-        <div class="primary__section-landing__nav">
-          <div class="primary__section-landing__nav__branding">
-            <img src="assets/img/logo_white.svg" alt="no photo" />
-          </div>
-          <div class="primary__section-landing__nav__navigation">
-            <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#news">PRODUCT</a></li>
-              <li><a href="#contact">SERVICES</a></li>
-              <li><a href="#contact">FAQS</a></li>
-              <li><a href="#about">ABOUT US</a></li>
-            </ul>
-            <img src="assets/img/search_icon.svg" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./dist/assets/css/style.css" />
+  <link rel="stylesheet" href="./dist/assets/css/responsive.css" />
+  <title>artisan</title>
+</head>
+
+<body>
+  <div class="primary">
+    <div class="primary__section-landing">
+      <div class="primary__section-landing--overlay"></div>
+      <div class="primary__section-landing__nav">
+        <div class="primary__section-landing__nav__branding">
+          <img src="dist/images/logo_white.svg" alt="no photo" />
         </div>
-        <div class="primary__section-landing__social">
-          <div class="primary__section-landing__social__icon">
-            <a href="#">
-              <img src="assets/img/002-instagram.png" />
-            </a>
-            <a href="#">
-              <img src="assets/img/004-facebook-app-logo.png" />
-            </a>
-            <a href="#">
-              <img src="assets/img/005-twitter.png" />
-            </a>
-          </div>
+        <div class="primary__section-landing__nav__navigation">
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#news">PRODUCT</a></li>
+            <li><a href="#contact">SERVICES</a></li>
+            <li><a href="#contact">FAQS</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+          </ul>
+          <img src="dist/images/search_icon.svg" />
         </div>
       </div>
-
-      <div class="primary__section-product">
-        <div class="primary__section-product__showcase">
-          <div class="showcase_frame">
-            <div class="img-overlay"></div>
-            <img src="assets/img/top_img_5.jpg" />
-          </div>
-          <div class="showcase_caption">
-            <h1 class="caption_title"> Made out of Natural Wood</h1>
-            <p class="caption_desc">We sell product that is made locally and handmade.</p>
-            <a class="btn-view" href="#">View More</a>
-          </div>
-          </div>
+      <div class="primary__section-landing__social">
+        <div class="primary__section-landing__social__icon">
+          <a href="#">
+            <img src="dist/images/002-instagram.png" />
+          </a>
+          <a href="#">
+            <img src="dist/images/004-facebook-app-logo.png" />
+          </a>
+          <a href="#">
+            <img src="dist/images/005-twitter.png" />
+          </a>
         </div>
       </div>
     </div>
-  </body>
-  <script src="js/slider.js"></script>
+
+    <div class="primary__center">
+      <img src="dist/images/logo_black.svg">
+      <p class="primary__center__message">
+        WELCOME ARTISAN
+      </p>
+    </div>
+
+    <div class="primary__section-product">
+      <div class="primary__section-product__showcase">
+        <div class="showcase_frame">
+          <div class="img-overlay"></div>
+          <div class="mySlides slide">
+            <img src="dist/images/top_img_5.jpg" />
+          </div>
+          <div class="mySlides slide">
+            <img src="dist/images/top_img_4.jpg" />
+          </div>
+          <div class="mySlides slide">
+            <img src="dist/images/top_img_2.jpg" />
+          </div>
+          <div class="mySlides slide">
+            <img src="dist/images/top_img_3.jpg" />
+          </div>
+          <div class="owl-slider">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <div class="showcase_caption">
+          <h1 class="caption_title"> Made out of Natural Wood</h1>
+          <p class="caption_desc">We sell product that is made locally and handmade.</p>
+          <a class="btn-view" href="#">View More</a>
+        </div>
+      </div>
+    </div>
+    <div class="primary__center primary__center--flex">
+      <img src="dist/images/logo_black.svg">
+      <p class="primary__center__message primary__center__message--flex">
+        WHAT DO WE OFFER
+      </p>
+    </div>
+    <div class="primary__section-services">
+      <div class="primary__section-container">
+
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="js/slider.js"></script>
+
 </html>
