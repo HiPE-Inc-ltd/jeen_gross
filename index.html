@@ -8,10 +8,18 @@
   <link rel="stylesheet" href="./dist/assets/css/style.css" />
   <link rel="stylesheet" href="./dist/assets/css/responsive.css" />
   <title>artisan</title>
+
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
+
   <div class="primary">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+
+    <!-- SECTION LANDING  -->
     <div class="primary__section-landing">
       <div class="primary__section-landing--overlay"></div>
       <div class="primary__section-landing__nav">
@@ -51,22 +59,26 @@
       </p>
     </div>
 
+
+
+    <!-- SECTION PRODUCT  -->
     <div class="primary__section-product">
       <div class="primary__section-product__showcase">
         <div class="showcase_frame">
           <div class="img-overlay"></div>
           <div class="mySlides slide">
-            <img src="dist/images/top_img_5.jpg" />
+            <img src="dist/images/showcase_1.jpg" />
           </div>
           <div class="mySlides slide">
-            <img src="dist/images/top_img_4.jpg" />
+            <img src="dist/images/showcase_2.jpg" />
           </div>
           <div class="mySlides slide">
-            <img src="dist/images/top_img_2.jpg" />
+            <img src="dist/images/showcase_3.jpg" />
           </div>
           <div class="mySlides slide">
-            <img src="dist/images/top_img_3.jpg" />
+            <img src="dist/images/showcase_4.jpg" />
           </div>
+
           <div class="owl-slider">
             <span class="dot"></span>
             <span class="dot"></span>
@@ -87,12 +99,71 @@
         WHAT DO WE OFFER
       </p>
     </div>
+
+    <!-- SECTION SERVICES  -->
     <div class="primary__section-services">
-      <div class="primary__section-container">
+      <div class="primary__section-services__container">
+        <div class="card--container">
+
+          <div class="card card--store">
+            <div class="card-pic grid--store">
+              <img src="dist/images/marketstore_icon.png" alt="">
+            </div>
+            <div class="card-title grid--store">
+              <h4>Advertise your product</h4>
+            </div>
+            <div class="card-desc grid--store">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. </p>
+            </div>
+          </div>
+          <div class="card card--ship">
+            <div class="card-pic grid--ship">
+              <img src="dist/images/shipping_icon.png" alt="">
+            </div>
+            <div class="card-title grid--store">
+              <h4>Fast Delivery</h4>
+            </div>
+            <div class="card-desc grid--store">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. </p>
+            </div>
+          </div>
+          <div class="card card--craft">
+            <div class="card-pic grid--craft">
+              <img src="dist/images/woodcrafting_icon.png" alt="">
+            </div>
+            <div class="card-title grid--store">
+              <h4>We accept customize</h4>
+            </div>
+            <div class="card-desc grid--store">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="primary__parallax">
+      <div class="primary__parallax__overlay">
 
       </div>
     </div>
 
+    <div class="primary__center primary__center--flex">
+      <img src="dist/images/logo_black.svg">
+      <p class="primary__center__message primary__center__message--flex">
+        WHAT DO WE OFFER
+      </p>
+    </div>
   </div>
 </body>
 <script src="js/slider.js"></script>
