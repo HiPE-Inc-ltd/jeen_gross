@@ -24,8 +24,7 @@ function style() {
         .on("error", sass.logError)
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./dist/assets/css'))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest('./dist/assets/css'));
 }
 
 function imgmin() {
@@ -50,6 +49,7 @@ function watch() {
     });
 
     gulp.watch('./scss/**/*.scss', style);
+    gulp.watch('./dist/assets/css/**/*.css').on('change', browserSync.reload);
     gulp.watch('./*.html').on('change', browserSync.reload);
     gulp.watch('./js/**/*.js').on('change', browserSync.reload);
 }
