@@ -4,37 +4,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./dist/assets/css/style.css" />
   <link rel="stylesheet" href="./dist/assets/css/responsive.css" />
+
   <title>artisan</title>
-
-
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
 
-  <div class="primary">
+  <div class="primary" id="home">
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="dist/images/arrow.png"></button>
 
     <!-- SECTION LANDING  -->
-    <div class="primary__section-landing">
+    <div class="primary__section-landing" id="s-landing">
       <div class="primary__section-landing--overlay"></div>
       <div class="primary__section-landing__nav">
         <div class="primary__section-landing__nav__branding">
-          <img src="dist/images/logo_white.svg" alt="no photo" />
+          <img src="dist/images/logo_white.png" alt="no photo" />
         </div>
         <div class="primary__section-landing__nav__navigation">
           <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#news">PRODUCT</a></li>
-            <li><a href="#contact">SERVICES</a></li>
-            <li><a href="#contact">FAQS</a></li>
+
+            <li><a href="#s-product">PRODUCT</a></li>
+            <li><a href="#s-services">SERVICES</a></li>
             <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#contact">FAQS</a></li>
           </ul>
-          <img src="dist/images/search_icon.svg" />
+          <!-- <img src="dist/images/search_icon.svg" /> -->
         </div>
       </div>
       <div class="primary__section-landing__social">
@@ -49,23 +47,27 @@
             <img src="dist/images/005-twitter.png" />
           </a>
         </div>
+        </img>
+      </div>
+      <div class="primary__section-landing__arrow">
+        <a class="ct-btn-scroll ct-js-btn-scroll" id="btn-s-product" href="#s-about">
+          <img alt="Arrow Down Icon" src="dist/images/arrow-down-1.png">
+        </a>
       </div>
     </div>
 
-    <div class="primary__center">
-      <img src="dist/images/logo_black.svg">
+
+    <div class="primary__center" id="s-about">
+      <img src="dist/images/logo_white.png">
       <p class="primary__center__message">
         WELCOME ARTISAN
       </p>
     </div>
-
-
-
     <!-- SECTION PRODUCT  -->
-    <div class="primary__section-product">
-      <div class="primary__section-product__showcase">
+    <div class="primary__section-about" id="s-about-i">
+      <div class="primary__section-about__showcase">
         <div class="showcase_frame">
-          <div class="img-overlay"></div>
+          <!--  <div class="img-overlay"></div> -->
           <div class="mySlides slide">
             <img src="dist/images/showcase_1.jpg" />
           </div>
@@ -87,66 +89,31 @@
           </div>
         </div>
         <div class="showcase_caption">
-          <h1 class="caption_title"> Made out of Natural Wood</h1>
-          <p class="caption_desc">We sell product that is made locally and handmade.</p>
-          <a class="btn-view" href="#">View More</a>
+          <h1 class="caption_title">About Us</h1>
+          <p class="caption_desc caption_desc--title">Made out of Natural Wood</p>
+          <p class="caption_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a class="btn-view" href="#">Read More</a>
         </div>
       </div>
     </div>
-    <div class="primary__center primary__center--flex">
-      <img src="dist/images/logo_black.svg">
-      <p class="primary__center__message primary__center__message--flex">
-        WHAT DO WE OFFER
+
+
+    <div class="primary__center" id="s-services">
+      <img src="dist/images/logo_white.png">
+      <p class="primary__center__message">
+        WHAT WE DO
       </p>
     </div>
 
     <!-- SECTION SERVICES  -->
-    <div class="primary__section-services">
+    <div class="primary__section-services" id="s-services-i">
       <div class="primary__section-services__container">
         <div class="card--container">
-
-          <div class="card card--store">
-            <div class="card-pic grid--store">
-              <img src="dist/images/marketstore_icon.png" alt="">
-            </div>
-            <div class="card-title grid--store">
-              <h4>Advertise your product</h4>
-            </div>
-            <div class="card-desc grid--store">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et
-                dolore magna aliqua. </p>
-            </div>
-          </div>
-          <div class="card card--ship">
-            <div class="card-pic grid--ship">
-              <img src="dist/images/shipping_icon.png" alt="">
-            </div>
-            <div class="card-title grid--store">
-              <h4>Fast Delivery</h4>
-            </div>
-            <div class="card-desc grid--store">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et
-                dolore magna aliqua. </p>
-            </div>
-          </div>
-          <div class="card card--craft">
-            <div class="card-pic grid--craft">
-              <img src="dist/images/woodcrafting_icon.png" alt="">
-            </div>
-            <div class="card-title grid--store">
-              <h4>We accept customize</h4>
-            </div>
-            <div class="card-desc grid--store">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et
-                dolore magna aliqua. </p>
-            </div>
-          </div>
+          <div class="card--container__inner-card"></div>
+          <div class="card--container__inner-card"></div>
+          <div class="card--container__inner-card"></div>
         </div>
       </div>
     </div>
@@ -154,18 +121,125 @@
 
     <div class="primary__parallax">
       <div class="primary__parallax__overlay">
-
+      </div>
+      <div class="primary__parallax__quote">
+        <div class="inner__message">
+          <h4>An artist is not paid for his labor but his vision</h4>
+        </div>
+        <div class="inner__owner">
+          <p>James Whistler</p>
+        </div>
       </div>
     </div>
 
-    <div class="primary__center primary__center--flex">
-      <img src="dist/images/logo_black.svg">
-      <p class="primary__center__message primary__center__message--flex">
-        WHAT DO WE OFFER
+    <div class="primary__center" id="s-faq">
+      <p class="primary__center__message">
+        FAQ
       </p>
     </div>
+    <!-- SECTION FAQ  -->
+    <div class="primary__section-faq" id="s-faq-i">
+      <div class="primary__section-faq__container">
+        <div class="primary__section-faq__container__left">
+          <div class="faqs_container_wrapper">
+            <div class="faq_container">
+              <div class="faq_down-arrow">
+                <div class="icon"><span>+</span></div>
+              </div>
+              <div class="faq_up-arrow">
+                <div class="icon"><span>-</span></div>
+              </div>
+              <h3> Post question here</h3>
+              <div class="answer">
+                <p><span class="highlight">Answer: </span> Post answer here</p>
+              </div>
+            </div>
+            <div class="faq_container">
+              <div class="faq_down-arrow">
+                <div class="icon"><span>+</span></div>
+              </div>
+              <div class="faq_up-arrow">
+                <div class="icon"><span>-</span></div>
+              </div>
+              <h3> Post question here</h3>
+              <div class="answer">
+                <p><span class="highlight">Answer: </span> Post answer here</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="primary__section-faq__container__right">
+          <div class="faqs_container_wrapper">
+            <div class="faq_container">
+              <div class="faq_down-arrow">
+                <div class="icon"><span>+</span></div>
+              </div>
+              <div class="faq_up-arrow">
+                <div class="icon"><span>-</span></div>
+              </div>
+              <h3> Post question here</h3>
+              <div class="answer">
+                <p><span class="highlight">Answer: </span> Post answer here</p>
+              </div>
+            </div>
+            <div class="faq_container">
+              <div class="faq_down-arrow">
+                <div class="icon"><span>+</span></div>
+              </div>
+              <div class="faq_up-arrow">
+                <div class="icon"><span>-</span></div>
+              </div>
+              <h3> Post question here</h3>
+              <div class="answer">
+                <p><span class="highlight">Answer: </span> Post answer here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="primary__center" id="s-services">
+      <img src="dist/images/logo_white.png">
+      <p class="primary__center__message">
+        OUR PRODUCT
+      </p>
+    </div>
+    <!-- SECTION FAQ  -->
+    <div class="primary__section-faq" id="s-faq-i">
+      <div class="primary__section-services__container">
+        <div class="card--container">
+          <div class="card--container__inner-card"></div>
+          <div class="card--container__inner-card"></div>
+          <div class="card--container__inner-card"></div>
+        </div>
+      </div>
+    </div>
+
   </div>
+  <!--end of primary div-->
+
 </body>
-<script src="js/slider.js"></script>
+<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.easeScroll.js"></script>
+<script src="js/app.js"></script>
+<script>
+  $("html").easeScroll({
+    frameRate: 60,
+    animationTime: 1000,
+    stepSize: 120,
+    pulseAlgorithm: 1,
+    pulseScale: 8,
+    pulseNormalize: 1,
+    accelerationDelta: 20,
+    accelerationMax: 1,
+    keyboardSupport: true,
+    arrowScroll: 50,
+    touchpadSupport: true,
+    fixedBackground: true
+  });
+</script>
 
 </html>
