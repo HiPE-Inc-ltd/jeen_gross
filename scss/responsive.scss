@@ -22,7 +22,7 @@ $container-max-widths: (sm: 720px,
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media all  and (max-width: 1600px),
+@media all and (max-width: 1600px),
 (max-width: get-breakpoints("lg")) {
     .primary {
         &__section-landing {
@@ -35,7 +35,7 @@ $container-max-widths: (sm: 720px,
                 width: get-width("lg");
 
                 &__branding {
-                margin-left: 0;
+                    margin-left: 0;
                 }
 
                 &__navigation {}
@@ -61,16 +61,42 @@ $container-max-widths: (sm: 720px,
                 &__navigation {
                     display: block;
                     margin: auto;
+
+                    ul {
+                        width: 540px;
+                        margin: 0 auto;
+
+                        li {
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
                 }
             }
 
             &__social {
                 width: get-width("md");
+                margin: 355px auto 0;
 
                 &__icon {
                     margin: auto;
                     position: static;
+                    width: 400px;
+                    display: flex;
+
+                    a {
+                        text-decoration: none;
+                        /* width: 100px; */
+                        display: inline-flex;
+                        margin: auto;
+
+                        img {
+                            margin: auto;
+                        }
+                    }
                 }
+
             }
         }
     }
