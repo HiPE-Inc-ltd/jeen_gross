@@ -52,7 +52,7 @@ $darktheme-card-bg2:#23262A;
 //     ##Screen = B/w 768px to 1024px
 //   */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media only screen and  (min-width: 768px) and (max-width: 1024px) {
 
     .primary {
         .btn-view {
@@ -232,7 +232,7 @@ $darktheme-card-bg2:#23262A;
     ##Screen = B/w 481px to 767px
   */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media only screen and  (min-width: 481px) and (max-width: 767px) {
     .primary {
         .btn-view {
             margin: auto;
