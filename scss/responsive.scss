@@ -4,7 +4,7 @@ $grid-breakpoints: (xs: 0,
     lg: 1366px,
     xl: 1920px);
 
-$container-max-widths: (sm: 720px,
+$container-max-widths: (sm: 768px,
     md: 930px,
     l: 1000px,
     lg: 1280px,
@@ -18,6 +18,12 @@ $container-max-widths: (sm: 720px,
     @return map-get($container-max-widths, $key);
 }
 
+$darktheme-background: #0D0F11;
+$darktheme-textcolor-gold: #FBC403;
+$darktheme-buttoncolor-brown: #BF9456;
+$darktheme-card-bg: #1A1D21;
+$darktheme-card-bg-opac: rgba(26, 29, 33, 0.3);
+$darktheme-card-bg2:#23262A;
 
 /* 
   ##Device = Desktops
@@ -49,12 +55,16 @@ $container-max-widths: (sm: 720px,
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .primary {
+        .btn-view {
+            margin: auto;
+        }
+
         &__section-landing {
             grid-template-rows: 80% 20%;
 
             &__nav {
                 display: block;
-                width: get-width("sm");
+                width: get-width("l");
                 height: 50%;
                 margin-top: 90px;
 
@@ -76,13 +86,13 @@ $container-max-widths: (sm: 720px,
         }
 
         &__section-about {
-            width: get-width("sm");
+            width: get-width("l");
             padding: 0;
             margin-top: 100px;
 
             &__showcase {
                 display: block;
-                width: get-width("sm");
+                width: get-width("l");
 
                 .showcase_frame,
                 .showcase_caption {
@@ -93,7 +103,11 @@ $container-max-widths: (sm: 720px,
 
             &__showcase {
                 .owl-slider {
-                    left: 45%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
                 }
 
                 .showcase_caption {
@@ -107,115 +121,196 @@ $container-max-widths: (sm: 720px,
                     }
 
                     .caption_desc {
-                        margin: auto;
-                        text-align: center;
-
-                        &--title {}
-                    }
-                }
-            }
-        }
-
-    }
-
-}
-
-/* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-    //CSS
-
-}
-
-/* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-    //CSS
-
-}
-
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-    .primary {
-        &__section-landing {
-            grid-template-rows: 80% 20%;
-
-            &__nav {
-                display: block;
-                width: get-width("sm");
-                height: 50%;
-                margin-top: 90px;
-
-                &__branding {
-                    display: block;
-                    margin: auto;
-                }
-
-                &__navigation {
-                    display: block;
-                    margin: auto;
-
-                    ul {
-                        width: 540px;
-                        margin: 0 auto;
-                    }
-                }
-            }
-        }
-
-        &__section-about {
-            width: get-width("sm");
-            padding: 0;
-            margin-top: 100px;
-
-            &__showcase {
-                display: block;
-                width: get-width("sm");
-
-                .showcase_frame,
-                .showcase_caption {
-                    width: 100%;
-                }
-
-            }
-
-            &__showcase {
-                .owl-slider {
-                    left: 45%;
-                }
-
-                .showcase_caption {
-                    .caption_title {
                         margin: 20px auto;
                         text-align: center;
-
-                        &::after {
-                            display: none;
-                        }
-                    }
-
-                    .caption_desc {
-                        margin: auto;
-                        text-align: center;
+                        width: 70%;
 
                         &--title {}
+                    }
+                    .caption_btn{
+                        margin: 250px auto 0;
+                        text-align: center;
                     }
                 }
             }
         }
 
+        &__section-services {
+            width: 100%;
+
+            &__container {
+                width: get-width("l");
+                margin: auto;
+
+                .card--container {
+                    width: inherit;
+
+                    &__inner-card {
+                        margin: -1px;
+
+                        .picture-container {
+                            .picture-holder {
+                                height: 48%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__parallax {
+            &__quote {
+                .inner__message{
+                    h4{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+        &__section-faq {
+            &__container {
+                width: get-width("l");
+            }
+        }
+
+        &__section-product {
+            width: 100%;
+
+            &__container {
+                width: get-width("l");
+                margin: auto;
+
+                .card--container {
+                    width: inherit;
+                    flex-wrap: wrap;
+                    position: relative;
+
+                    &__inner-card {
+                        margin: 20px;
+                        width: 293px;
+                    }
+
+                    &::after {
+                        color: white;
+                        content: 'Click the button to view more';
+                        position: absolute;
+                        bottom: 255px;
+                        left: 40%;
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
     }
+
+    .footer {
+        &__content {
+            &__container {
+                width: get-width('l');
+            }
+        }
+    }
+
 }
+
+// //
+// /* 
+//     ##Device = Tablets, Ipads (landscape)
+//     ##Screen = B/w 768px to 1024px
+//   */
+
+// @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+//     //CSS
+
+// }
+
+// /* 
+//     ##Device = Low Resolution Tablets, Mobiles (Landscape)
+//     ##Screen = B/w 481px to 767px
+//   */
+
+// @media (min-width: 481px) and (max-width: 767px) {
+
+//     //CSS
+
+// }
+
+// /* 
+//     ##Device = Most of the Smartphones Mobiles (Portrait)
+//     ##Screen = B/w 320px to 479px
+//   */
+
+// @media (min-width: 320px) and (max-width: 480px) {
+
+//     .primary {
+
+
+//         &__section-landing {
+//             grid-template-rows: 80% 20%;
+
+//             &__nav {
+//                 display: block;
+//                 width: get-width("sm");
+//                 height: 50%;
+//                 margin-top: 90px;
+
+//                 &__branding {
+//                     display: block;
+//                     margin: auto;
+//                 }
+
+//                 &__navigation {
+//                     display: block;
+//                     margin: auto;
+
+//                     ul {
+//                         width: 540px;
+//                         margin: 0 auto;
+//                     }
+//                 }
+//             }
+//         }
+
+//         &__section-about {
+//             width: get-width("sm");
+//             padding: 0;
+//             margin-top: 100px;
+
+//             &__showcase {
+//                 display: block;
+//                 width: get-width("sm");
+
+//                 .showcase_frame,
+//                 .showcase_caption {
+//                     width: 100%;
+//                 }
+
+//             }
+
+//             &__showcase {
+//                 .owl-slider {
+//                     left: 45%;
+//                 }
+
+//                 .showcase_caption {
+//                     .caption_title {
+//                         margin: 20px auto;
+//                         text-align: center;
+
+//                         &::after {
+//                             display: none;
+//                         }
+//                     }
+
+//                     .caption_desc {
+//                         margin: auto;
+//                         text-align: center;
+
+//                         &--title {}
+//                     }
+//                 }
+//             }
+//         }
+
+//     }
+// }

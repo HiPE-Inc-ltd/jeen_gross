@@ -134,10 +134,7 @@ $container-max-widths: (sm: 720px,
         border: 2px solid $color-darkgold;
         padding: 6px 40px;
         color: $darktheme-background;
-        position: absolute;
-        // right: 115px;
-        left: 50px;
-        bottom: 0;
+
         box-shadow: inset 0 0 0 0 $background-color;
         -webkit-transition: all ease 0.8s;
         -moz-transition: all ease 0.8s;
@@ -458,10 +455,13 @@ $container-max-widths: (sm: 720px,
             }
 
             .owl-slider {
-                text-align: center;
-                margin-top: -37px;
                 position: absolute;
-                left: 240px;
+                margin-top: -37px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
 
                 .dot {
                     height: 10px;
@@ -515,6 +515,15 @@ $container-max-widths: (sm: 720px,
                         color: $darktheme-textcolor-gold;
                         margin: 0 0 10px 52px;
                     }
+                }
+
+                .caption_btn {
+                    width: 450px;
+                    position: relative;
+                    margin: 250px 0 0;
+                    height: 50px;
+                    margin-left: 52px;
+                    display: flex;
                 }
 
 
