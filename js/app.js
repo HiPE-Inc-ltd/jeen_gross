@@ -17,11 +17,11 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  setTimeout(showSlides, 9000); // Change image every 2 seconds
 }
 
 //Get the button
-var mybutton = document.getElementById("myBtn");
+var mybutton = document.getElementById("btn-top");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction()
@@ -42,12 +42,6 @@ function topFunction() {
 }
 
 
-// $("#btn-s-product").click(function() {
-//   $('html, body').animate({
-//       scrollTop: $("#s-product").offset().top
-//   }, 1000);
-// });
-// handle links with @href started with '#' only
 $(document).on('click', 'a[href^="#"]', function (e) {
   // target element id
   var id = $(this).attr('href');
@@ -70,19 +64,6 @@ $(document).on('click', 'a[href^="#"]', function (e) {
   });
 });
 
-
-// $('.faq-box').on('click', function () {
-//   var $this = $(this);
-//     $(this).find('.faq-sign-none, .faq-sign-display').toggle();
-
-//     if ( $(this).hasClass("active")) {
-//       $(this).find(".faq-answer").slideUp();
-//       $(this).removeClass("active");
-//     } else {
-//       $(this).find(".faq-answer").slideDown();
-//       $(this).addClass("active");
-//     }
-//   });
 $('.faq_container').on('click', function () {
   var $this = $(this);
   $(this).find('.faq_up-arrow, .faq_down-arrow').toggle();
@@ -93,4 +74,19 @@ $('.faq_container').on('click', function () {
     $(this).find(".answer").slideDown();
     $(this).addClass("active");
   }
+});
+
+$("html").easeScroll({
+  frameRate: 60,
+  animationTime: 1000,
+  stepSize: 120,
+  pulseAlgorithm: 1,
+  pulseScale: 8,
+  pulseNormalize: 1,
+  accelerationDelta: 20,
+  accelerationMax: 1,
+  keyboardSupport: true,
+  arrowScroll: 50,
+  touchpadSupport: true,
+  fixedBackground: true
 });
