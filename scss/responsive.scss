@@ -127,7 +127,8 @@ $darktheme-card-bg2:#23262A;
 
                         &--title {}
                     }
-                    .caption_btn{
+
+                    .caption_btn {
                         margin: 250px auto 0;
                         text-align: center;
                     }
@@ -157,15 +158,17 @@ $darktheme-card-bg2:#23262A;
                 }
             }
         }
+
         &__parallax {
             &__quote {
-                .inner__message{
-                    h4{
+                .inner__message {
+                    h4 {
                         font-size: 2.5rem;
                     }
                 }
             }
         }
+
         &__section-faq {
             &__container {
                 width: get-width("l");
@@ -224,16 +227,170 @@ $darktheme-card-bg2:#23262A;
 
 // }
 
-// /* 
-//     ##Device = Low Resolution Tablets, Mobiles (Landscape)
-//     ##Screen = B/w 481px to 767px
-//   */
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
 
-// @media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
+    .primary {
+        .btn-view {
+            margin: auto;
+        }
+        &__section-landing {
+            grid-template-rows: 80% 20%;
 
-//     //CSS
+            &__nav {
+                display: block;
+                width: get-width("l");
+                height: 50%;
+                margin-top: 90px;
 
-// }
+                &__branding {
+                    display: block;
+                    margin: auto;
+                }
+
+                &__navigation {
+                    display: block;
+                    margin: auto;
+
+                    ul {
+                        width: 540px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        &__section-about {
+            width: get-width("l");
+            padding: 0;
+            margin-top: 100px;
+
+            &__showcase {
+                display: block;
+                width: get-width("l");
+
+                .showcase_frame,
+                .showcase_caption {
+                    width: 100%;
+                }
+
+            }
+
+            &__showcase {
+                .owl-slider {
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                }
+
+                .showcase_caption {
+                    .caption_title {
+                        margin: 20px auto;
+                        text-align: center;
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    .caption_desc {
+                        margin: 20px auto;
+                        text-align: center;
+                        width: 70%;
+
+                        &--title {}
+                    }
+
+                    .caption_btn {
+                        margin: 250px auto 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        &__section-services {
+            width: 100%;
+
+            &__container {
+                width: get-width("l");
+                margin: auto;
+
+                .card--container {
+                    width: inherit;
+
+                    &__inner-card {
+                        margin: -1px;
+
+                        .picture-container {
+                            .picture-holder {
+                                height: 48%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__parallax {
+            &__quote {
+                .inner__message {
+                    h4 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+
+        &__section-faq {
+            &__container {
+                width: get-width("l");
+            }
+        }
+
+        &__section-product {
+            width: 100%;
+
+            &__container {
+                width: get-width("l");
+                margin: auto;
+
+                .card--container {
+                    width: inherit;
+                    flex-wrap: wrap;
+                    position: relative;
+
+                    &__inner-card {
+                        margin: 20px;
+                        width: 293px;
+                    }
+
+                    &::after {
+                        color: white;
+                        content: 'Click the button to view more';
+                        position: absolute;
+                        bottom: 255px;
+                        left: 40%;
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__content {
+            &__container {
+                width: get-width('l');
+            }
+        }
+    }
+}
 
 // /* 
 //     ##Device = Most of the Smartphones Mobiles (Portrait)
