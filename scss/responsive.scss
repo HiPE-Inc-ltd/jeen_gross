@@ -19,39 +19,44 @@ $container-max-widths: (sm: 720px,
 }
 
 
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
+@media (min-width: 1281px) {
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media all and (max-width: 1600px),
-(max-width: get-breakpoints("lg")) {
-    .primary {
-        &__section-landing {
+    //CSS
 
-            &__social {
-                width: get-width("lg");
-            }
-
-            &__nav {
-                width: get-width("lg");
-
-                &__branding {
-                    margin-left: 0;
-                }
-
-                &__navigation {}
-            }
-        }
-
-    }
 }
 
-@media all and (max-width: 1280px),
-(max-width: get-breakpoints("md")) {
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    //CSS
+
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
     .primary {
         &__section-landing {
+            grid-template-rows: 80% 20%;
+
             &__nav {
                 display: block;
-                width: get-width("md");
+                width: get-width("sm");
+                height: 50%;
+                margin-top: 90px;
 
                 &__branding {
                     display: block;
@@ -65,39 +70,152 @@ $container-max-widths: (sm: 720px,
                     ul {
                         width: 540px;
                         margin: 0 auto;
-
-                        li {
-                            &:last-child {
-                                margin-right: 0;
-                            }
-                        }
                     }
                 }
-            }
-
-            &__social {
-                width: get-width("md");
-                margin: 355px auto 0;
-
-                &__icon {
-                    margin: auto;
-                    position: static;
-                    width: 400px;
-                    display: flex;
-
-                    a {
-                        text-decoration: none;
-                        /* width: 100px; */
-                        display: inline-flex;
-                        margin: auto;
-
-                        img {
-                            margin: auto;
-                        }
-                    }
-                }
-
             }
         }
+
+        &__section-about {
+            width: get-width("sm");
+            padding: 0;
+            margin-top: 100px;
+
+            &__showcase {
+                display: block;
+                width: get-width("sm");
+
+                .showcase_frame,
+                .showcase_caption {
+                    width: 100%;
+                }
+
+            }
+
+            &__showcase {
+                .owl-slider {
+                    left: 45%;
+                }
+
+                .showcase_caption {
+                    .caption_title {
+                        margin: 20px auto;
+                        text-align: center;
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    .caption_desc {
+                        margin: auto;
+                        text-align: center;
+
+                        &--title {}
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    //CSS
+
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    //CSS
+
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .primary {
+        &__section-landing {
+            grid-template-rows: 80% 20%;
+
+            &__nav {
+                display: block;
+                width: get-width("sm");
+                height: 50%;
+                margin-top: 90px;
+
+                &__branding {
+                    display: block;
+                    margin: auto;
+                }
+
+                &__navigation {
+                    display: block;
+                    margin: auto;
+
+                    ul {
+                        width: 540px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        &__section-about {
+            width: get-width("sm");
+            padding: 0;
+            margin-top: 100px;
+
+            &__showcase {
+                display: block;
+                width: get-width("sm");
+
+                .showcase_frame,
+                .showcase_caption {
+                    width: 100%;
+                }
+
+            }
+
+            &__showcase {
+                .owl-slider {
+                    left: 45%;
+                }
+
+                .showcase_caption {
+                    .caption_title {
+                        margin: 20px auto;
+                        text-align: center;
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    .caption_desc {
+                        margin: auto;
+                        text-align: center;
+
+                        &--title {}
+                    }
+                }
+            }
+        }
+
     }
 }
