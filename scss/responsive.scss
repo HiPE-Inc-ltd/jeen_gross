@@ -52,7 +52,7 @@ $darktheme-card-bg2:#23262A;
 //     ##Screen = B/w 768px to 1024px
 //   */
 
-@media only screen and  (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     .primary {
         .btn-view {
@@ -232,7 +232,7 @@ $darktheme-card-bg2:#23262A;
     ##Screen = B/w 481px to 767px
   */
 
-@media only screen and  (min-width: 481px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .primary {
         .btn-view {
             margin: auto;
@@ -391,83 +391,3 @@ $darktheme-card-bg2:#23262A;
         }
     }
 }
-
-// /* 
-//     ##Device = Most of the Smartphones Mobiles (Portrait)
-//     ##Screen = B/w 320px to 479px
-//   */
-
-// @media (min-width: 320px) and (max-width: 480px) {
-
-//     .primary {
-
-
-//         &__section-landing {
-//             grid-template-rows: 80% 20%;
-
-//             &__nav {
-//                 display: block;
-//                 width: get-width("sm");
-//                 height: 50%;
-//                 margin-top: 90px;
-
-//                 &__branding {
-//                     display: block;
-//                     margin: auto;
-//                 }
-
-//                 &__navigation {
-//                     display: block;
-//                     margin: auto;
-
-//                     ul {
-//                         width: 540px;
-//                         margin: 0 auto;
-//                     }
-//                 }
-//             }
-//         }
-
-//         &__section-about {
-//             width: get-width("sm");
-//             padding: 0;
-//             margin-top: 100px;
-
-//             &__showcase {
-//                 display: block;
-//                 width: get-width("sm");
-
-//                 .showcase_frame,
-//                 .showcase_caption {
-//                     width: 100%;
-//                 }
-
-//             }
-
-//             &__showcase {
-//                 .owl-slider {
-//                     left: 45%;
-//                 }
-
-//                 .showcase_caption {
-//                     .caption_title {
-//                         margin: 20px auto;
-//                         text-align: center;
-
-//                         &::after {
-//                             display: none;
-//                         }
-//                     }
-
-//                     .caption_desc {
-//                         margin: auto;
-//                         text-align: center;
-
-//                         &--title {}
-//                     }
-//                 }
-//             }
-//         }
-
-//     }
-// }
