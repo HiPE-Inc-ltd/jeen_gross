@@ -33,6 +33,7 @@ $darktheme-card-bg2:#23262A;
 
         &__section-landing {
             grid-template-rows: 80% 20%;
+
             &__nav {
                 width: 1000px;
 
@@ -113,8 +114,9 @@ $darktheme-card-bg2:#23262A;
                         font-size: 2.5rem;
                     }
                 }
-                .inner__owner{
-                    p{
+
+                .inner__owner {
+                    p {
                         font-size: 1.7rem;
                     }
                 }
@@ -187,6 +189,7 @@ $darktheme-card-bg2:#23262A;
                     ul {
                         width: 540px;
                         margin: 0 auto;
+                        text-align: center;
                     }
                 }
             }
@@ -347,6 +350,7 @@ $darktheme-card-bg2:#23262A;
                     margin: auto;
 
                     ul {
+                        text-align: center;
                         width: 540px;
                         margin: 0 auto;
                     }
