@@ -25,32 +25,139 @@ $darktheme-card-bg: #1A1D21;
 $darktheme-card-bg-opac: rgba(26, 29, 33, 0.3);
 $darktheme-card-bg2:#23262A;
 
-// /* 
-//   ##Device = Desktops
-//   ##Screen = 1281px to higher resolution desktops
-// */
 
-// @media (min-width: 1281px) {
+@media screen and (max-width: 1366px) {
 
-//     //CSS
+    .primary {
+        .btn-view {}
 
-// }
+        &__section-landing {
+            grid-template-rows: 80% 20%;
+            &__nav {
+                width: 1000px;
 
-// /* 
-//     ##Device = Laptops, Desktops
-//     ##Screen = B/w 1025px to 1280px
-//   */
+                &__branding {
+                    height: 90px;
+                    width: 260px;
+                }
 
-// @media (min-width: 1025px) and (max-width: 1280px) {
+                &__navigation {
+                    width: auto;
 
-//     //CSS
+                    ul {
+                        li {
+                            margin: 0 10px;
 
-// }
+                            a {
+                                font-weight: 600;
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
-// /* 
-//     ##Device = Tablets, Ipads (portrait)
-//     ##Screen = B/w 768px to 1024px
-//   */
+        &__section-about {
+            width: get-width("l");
+
+            &__showcase {
+                width: get-width("l");
+            }
+
+        }
+
+        &__showcase {
+            .owl-slider {}
+
+            .showcase_caption {
+                .caption_title {
+
+                    &::after {}
+                }
+
+                .caption_desc {
+
+                    &--title {}
+                }
+
+                .caption_btn {}
+            }
+        }
+
+
+        &__section-services {
+            width: 100%;
+
+            &__container {
+                width: get-width("lg");
+
+                .card--container {
+                    width: inherit;
+
+                    &__inner-card {
+                        width: 380px;
+
+                        .picture-container {
+                            .picture-holder {}
+                        }
+                    }
+                }
+            }
+        }
+
+        &__parallax {
+            &__quote {
+                .inner__message {
+                    h4 {
+                        font-size: 2.5rem;
+                    }
+                }
+                .inner__owner{
+                    p{
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+
+        &__section-faq {
+            &__container {
+                width: get-width("l");
+            }
+        }
+
+        &__section-product {
+            width: 100%;
+
+            &__container {
+                width: get-width("lg");
+                margin: auto;
+
+                .card--container {
+                    &__inner-card {
+                        width: inherit;
+                        flex-wrap: wrap;
+                        position: relative;
+                        margin: 0 15px;
+                    }
+
+                    &::after {}
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__content {
+            &__container {
+                width: get-width("lg");
+            }
+        }
+    }
+}
+
+
 
 @media screen and (max-width: 1024px) {
 
@@ -215,28 +322,12 @@ $darktheme-card-bg2:#23262A;
 
 }
 
-// //
-// /* 
-//     ##Device = Tablets, Ipads (landscape)
-//     ##Screen = B/w 768px to 1024px
-//   */
-
-// @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-//     //CSS
-
-// }
-
-/* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-
 @media screen and (max-width: 767px) {
     .primary {
         .btn-view {
             margin: auto;
         }
+
         &__section-landing {
             grid-template-rows: 80% 20%;
 
