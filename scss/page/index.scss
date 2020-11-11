@@ -54,7 +54,7 @@
         li{
             display:flex;
             @include is-pc{
-                @include font-line(36);
+                @include font-line(42);
             }
         }
         &__text{
