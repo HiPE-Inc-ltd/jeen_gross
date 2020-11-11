@@ -1,406 +1,661 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./dist/assets/css/style.css" />
-  <link rel="stylesheet" href="./dist/assets/css/responsive.css" />
-
-  <title>artisan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeengross</title>
+    <!--MAIN CSS-->
+    <link rel="stylesheet" href="/dist/assets/css/style.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!--PAGE-->
+    <link rel="stylesheet" href="/dist/assets/css/page/index.css">
 </head>
-
 <body>
-
-  <div class="primary" id="home">
-
-    <button onclick="topFunction()" id="btn-top" title="Go to top"><i class="fa fa-arrow-up"
-        aria-hidden="true"></i></button>
-
-    <!-- SECTION LANDING  -->
-    <div class="primary__section-landing" id="s-landing">
-      <div class="primary__section-landing--overlay"></div>
-      <div class="primary__section-landing__nav">
-        <div class="primary__section-landing__nav__branding">
-          <img src="dist/images/logo_white.png" alt="no photo" />
+    <section class="hero">
+        <div class="l-wrap">
+            <div class="l-container hero__inner">
+                <div class="hero__top">
+                    <img src="/assets/img/common/logo-top.png" alt="" class="hero__logo">
+                </div>  
+                <div class="hero__bottom">
+                    <div class="hero__texts">
+                        <img src="/assets/img/common/hero_text.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="primary__section-landing__nav__navigation">
-          <ul>
-            <li><a href="#s-about">ABOUT</a></li>
-            <li><a href="#s-services">SERVICES</a></li>
-            <li><a href="#s-faq">FAQS</a></li>
-            <li><a href="#s-product">PRODUCT</a></li>
-          </ul>
+    </section>
+    <section class="objectives">
+        <div class="l-wrap">
+            <div class="l-container objectives__inner">
+                <div class="objectives__top">
+                    <div class="checklist">
+                        <ul> 
+                            <li><img src="/assets/img/common/checklist.svg" alt="check list">
+                                <div class="checklist__text">せっかくトレーニングしても食事で太ってしまう 
+                                <div class="checklist__overlay"></div></div>  
+                            </li>
+                            <li><img src="/assets/img/common/checklist.svg" alt="check list">
+                                <div class="checklist__text">筋肉量をもっと増やしたい！ 
+                                <div class="checklist__overlay"></div></div>  
+                            </li>
+                            <li><img src="/assets/img/common/checklist.svg" alt="check list">
+                                <div class="checklist__text">マッチョになりたい
+                                <div class="checklist__overlay"></div></div>  
+                            </li>
+                            <li><img src="/assets/img/common/checklist.svg" alt="check list">
+                                <div class="checklist__text">細くなりたい 
+                                <div class="checklist__overlay"></div></div>  
+                            </li>
+                            <li><img src="/assets/img/common/checklist.svg" alt="check list">
+                                <div class="checklist__text">ダイエットは気にしてるけど難しい 
+                                <div class="checklist__overlay"></div></div>  
+                            </li>
+                            <li><img src="/assets/img/common/checklist.svg" alt="check list">
+                                <div class="checklist__text">健康な食事を摂りたい
+                                <div class="checklist__overlay"></div></div>  
+                            </li>
+                            <li><img src="/assets/img/common/checklist.svg" alt="check list">
+                                <div class="checklist__text">栄養管理が苦手 
+                                <div class="checklist__overlay"></div></div>  
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="objectives__img">
+                        <img src="/assets//img/common/red-girl.png" loading="lazy" class="red-girl" alt="red-girl">
+                    </div>
+                </div>
+                <div class="objectives__bottom">
+                    <div class="objectives__img">
+                        <div class="bubbletext">
+                            <img src="/assets/img/common/objective_chat.png" loading="lazy" alt="If you are.Go this way!">
+                        </div>
+                        <div class="link">
+                            <h1><a href="https://guidefood.thebase.in"><img src="/assets/img/common/shopping_link.png" loading="lazy" alt="SHOPPING SITE"></a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="primary__section-landing__arrow">
-        <a class="ct-btn-scroll ct-js-btn-scroll" id="btn-s-product" href="#s-about">
-          <img alt="Arrow Down Icon" src="dist/images/arrow-down-1.png">
-        </a>
-      </div>
-    </div>
-
-
-    <div class="primary__center" id="s-about">
-      <img src="dist/images/logo_white.png">
-      <p class="primary__center__message">
-        WELCOME ARTISAN
-      </p>
-    </div>
-    <!-- SECTION ABOUT -->
-    <div class="primary__section-about" id="s-about-i">
-      <div class="primary__section-about__showcase">
-        <div class="showcase_frame">
-          <div class="mySlides mySlides--fading">
-            <img src="dist/images/showcase_1.jpg" />
-          </div>
-          <div class="mySlides mySlides--fading">
-            <img src="dist/images/showcase_2.jpg" />
-          </div>
-          <div class="mySlides mySlides--fading">
-            <img src="dist/images/showcase_3.jpg" />
-          </div>
-          <div class="mySlides mySlides--fading">
-            <img src="dist/images/showcase_4.jpg" />
-          </div>
-
-          <div class="owl-slider">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
+    </section>
+    <section class="concept">
+        <div class="l-wrap">
+            <div class="l-container is-column2 concept__inner">
+                <div class="l-container__left concept__left"></div>
+                <div class="l-container__right concept__right ">
+                    <div class="c-title">
+                        <div class="c-title__title"><img src="/assets/img/common/concept_title.svg" alt="Concept"></div>
+                        <div class="c-title__subtitle c-title__subtitle--color01">コンセプト</div>
+                        <div class="c-title__desc">
+                            瘦せたいけど...筋肉もっとつけたいのに...、
+                            どんな食事が良いのか分からなくなったり献 立がマンネリ化したりされる方がほとんどだと思います。 
+                            食事から変化する事によって、なかなか身体が変わらないとお悩みな方々にも美味しく食 べて変われる考えになってもらいたい。
+                            そんな方々に必要不可欠の栄養が詰まった料理を豊富なメニューの中からお届けする事に よって、
+                            目標とされている身体へ guide(導く)していきたいなという思いからはじめました。 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="showcase_caption">
-          <h1 class="caption_title">About Us</h1>
-          <p class="caption_desc caption_desc--title">Made out of Natural Wood</p>
-          <p class="caption_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-          <div class="caption_btn">
-            <a class="btn-view" href="#">Read More</a>
-          </div>
+    </section>
+    <section class="commitment">
+        <div class="l-wrap">
+            <div class="l-container is-column2 commitment__inner">
+                <div class="l-container__left commitment__left">
+                    <div class="c-title">
+                        <div class="c-title__title"><img src="/assets/img/common/commitment_title.svg" alt="Commitment"></div>
+                        <div class="c-title__subtitle c-title__subtitle--color02">コンセプト</div>
+                        <div class="c-title__desc">
+                            どんな目標でも食事において共通してくる点として、たんぱく質の十分な摂取・低脂質にな ります。
+                            このメニューの成分は全てにおいて高たんぱくな料理、魚に含まれてる身体に良い 脂質は除いて低脂質な料理を中心に考え、
+                            あまり意識されていない亜鉛など体調管理にお いても必要な栄養素が詰まった食材を使用しております。 また解凍して頂くだけで食べられるので、
+                            朝ご飯を抜いてしまいがちな方や職場に持参も でき、夜疲れて作るのがしんどい時になど様々な場面で手抜きのようで最高の栄養が詰ま 
+                            った料理をお届けできるように食材選びからこだわりました。 
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="l-container__right commitment__right"></div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- SECTION ABOUT END -->
+    </section>
+    <section class="pfc">
+        <div class="l-wrap">
+            <div class="l-container pfc__inner">
+                <div class="pfc__top">
+                    <div class="c-title">
+                        <div class="c-title__title"><img src="/assets/img/common/pfc_title.svg" alt="PFC BALLANCE"></div>
+                        <div class="c-title__subtitle c-title__subtitle--color03">食事について PFC バランス</div>
+                    </div>
+                </div>
+                <div class="pfc__bottom">
+                    <div class="l-container is-column2">
+                        <div class="pfc__left l-container__left"></div>
+                        <div class="pfc__right l-container__right">
+                            <div class="c-title">
+                                <div class="c-title__desc">
+                                    トレーニングと重ねて必要になってくる食事ですが、P(たんぱく質)・F(脂質)・C(炭水 化物)のバランスが大切になってきます。 トレーニングを行い筋肉量を増やしていきますが、筋肉に変わる栄養素である P をたくさ ん摂取しないともちろんトレーニング効果も反映されてきません。 
+                                    1 番高いカロリーを秘めており、脂肪になりやすい F の摂取のしすぎには要注意。しかし、 オメガ 3 といった魚に含まれている身体に良い脂質も食材によってはあります。 よく丸々カットされる事の多い C ですが、人が仕事や遊びにせよエネルギー源となってい るのが C から摂取している栄養素です。エネルギー源となる C が不足すると筋肉を分解し てエネルギー源に変えてしまい筋肉量が減少してしまいます。なので脂肪に変わりやすい ホルモンが多く分泌される夜ではなく、1 日のはじまりとなる朝ご飯にはしっかり C も摂 取しましょう。
 
-    <div class="primary__center" id="s-services">
-      <img src="dist/images/logo_white.png">
-      <p class="primary__center__message">
-        WHAT WE DO
-      </p>
-    </div>
-
-    <!-- SECTION SERVICES  -->
-    <div class="primary__section-services" id="s-services-i">
-      <div class="primary__section-services__container">
-        <div class="card--container">
-          <div class="card--container__inner-card">
-            <div class="picture-container">
-              <div class="picture-holder icon-ads">
-                <img src="dist/images/icon-ads.png">
-              </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="services-desc">
-              <h3 class="title">We do Ads</h3>
-              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="card--container__inner-card">
-            <div class="picture-container">
-              <div class="picture-holder icon-truck">
-                <img src="dist/images/icon-trucks.png">
-              </div>
-            </div>
-
-            <div class="services-desc">
-              <h3 class="title">We do Ship</h3>
-              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="card--container__inner-card">
-            <div class="picture-container">
-              <div class="picture-holder icon-design">
-                <img src="dist/images/icon-designs.png">
-              </div>
-            </div>
-
-            <div class="services-desc">
-              <h3 class="title">We do customize</h3>
-              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- SECTION SERVICES END  -->
+    </section>
+    <section class="plan ">
+        <div class="l-wrap">
+            <div class="p-carousel__nav">
+                <h1 class="prev-arrow"><img src="/assets/img/common/carousel_left.svg" alt=""></h1>
+                <h1 class="next-arrow"><img src="/assets/img/common/carousel_right.svg" alt=""></h1>
+            </div>
+        </div>
+        <div class="l-wrap-fluid">
+            <div class="l-container">
+                    <!-- title-->
+                    <div class="plan__title u-d-f u-mb-70">
+                        <img src="/assets/img/common/plan_title.svg" alt="PLAN">
+                    </div>
+                    <!-- CAROUSEL-->
+                    <div class="p-carousel">
+                        <!-- <div class="p-carousel__nav">
+                            <h1 class="prev-arrow"><img src="/assets/img/common/carousel_left.svg" alt=""></h1>
+                            <h1 class="next-arrow"><img src="/assets/img/common/carousel_right.svg" alt=""></h1>
+                        </div> -->
+                        <ul class="p-carousel__slider center" style="width:100%; overflow:visible;">
 
-    <div class="primary__parallax">
-      <div class="primary__parallax__overlay">
-      </div>
-      <div class="primary__parallax__quote">
-        <div class="inner__message">
-          <h4>An artist is not paid for his labor but his vision</h4>
-        </div>
-        <div class="inner__owner">
-          <p>James Whistler</p>
-        </div>
-      </div>
-    </div>
-    <!-- SECTION FAQ  -->
-    <div class="primary__center" id="s-faq">
-      <p class="primary__center__message">
-        FAQ
-      </p>
-    </div>
-    <div class="primary__section-faq" id="s-faq-i">
-      <div class="primary__section-faq__container">
-        <div class="primary__section-faq__container__left">
-          <div class="faqs_container_wrapper">
-            <div class="faq_container">
-              <div class="faq_down-arrow">
-                <div class="icon"><span>+</span></div>
-              </div>
-              <div class="faq_up-arrow">
-                <div class="icon"><span>-</span></div>
-              </div>
-              <h3> Post question here</h3>
-              <div class="answer">
-                <p><span class="highlight">Answer: </span> Post answer here</p>
-              </div>
-            </div>
-            <div class="faq_container">
-              <div class="faq_down-arrow">
-                <div class="icon"><span>+</span></div>
-              </div>
-              <div class="faq_up-arrow">
-                <div class="icon"><span>-</span></div>
-              </div>
-              <h3> Post question here</h3>
-              <div class="answer">
-                <p><span class="highlight">Answer: </span> Post answer here</p>
-              </div>
-            </div>
-            <div class="faq_container">
-              <div class="faq_down-arrow">
-                <div class="icon"><span>+</span></div>
-              </div>
-              <div class="faq_up-arrow">
-                <div class="icon"><span>-</span></div>
-              </div>
-              <h3> Post question here</h3>
-              <div class="answer">
-                <p><span class="highlight">Answer: </span> Post answer here</p>
-              </div>
-            </div>
-          </div>
+                            <li class="p-carousel__cards">
+                                <div class="p-carousel__title"><p>プラン名プラン名</p></div>
+                                <div class="p-carousel__img"><img src="/assets/img/common/slider01.png" alt=""></div>
+                                <div class="p-carousel__table u-mt-30">
+                                    <table class="c-table">
+                                        <thead class="c-table__head head03">
+                                            <tr class="head03__tr">
+                                                <th class="head03__th">栄養素</th>
+                                                <th class="head03__th">LEAN</th>
+                                                <th class="head03__th">MAINTAIN</th>
+                                                <th class="head03__th">GAIN</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="body03">
+                                            <tr class="body03__tr"> <!-- 1 -->
+                                                <td class="body03__td">カロリー（kcal）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
 
-        </div>
-        <div class="primary__section-faq__container__right">
-          <div class="faqs_container_wrapper">
-            <div class="faq_container">
-              <div class="faq_down-arrow">
-                <div class="icon"><span>+</span></div>
-              </div>
-              <div class="faq_up-arrow">
-                <div class="icon"><span>-</span></div>
-              </div>
-              <h3> Post question here</h3>
-              <div class="answer">
-                <p><span class="highlight">Answer: </span> Post answer here</p>
-              </div>
-            </div>
-            <div class="faq_container">
-              <div class="faq_down-arrow">
-                <div class="icon"><span>+</span></div>
-              </div>
-              <div class="faq_up-arrow">
-                <div class="icon"><span>-</span></div>
-              </div>
-              <h3> Post question here</h3>
-              <div class="answer">
-                <p><span class="highlight">Answer: </span> Post answer here</p>
-              </div>
-            </div>
-            <div class="faq_container">
-              <div class="faq_down-arrow">
-                <div class="icon"><span>+</span></div>
-              </div>
-              <div class="faq_up-arrow">
-                <div class="icon"><span>-</span></div>
-              </div>
-              <h3> Post question here</h3>
-              <div class="answer">
-                <p><span class="highlight">Answer: </span> Post answer here</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- SECTION FAQ END -->
+                                            <tr class="body03__tr"> <!-- 2 -->
+                                                <td class="body03__td">タンパク質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
 
-    <div class="primary__center" id="s-product">
-      <img src="dist/images/logo_white.png">
-      <p class="primary__center__message">
-        OUR PRODUCT
-      </p>
-    </div>
-    <!-- SECTION PRODUCT  -->
-    <div class="primary__section-product" id="s-product-i">
-      <div class="primary__section-product__container">
-        <div class="card--container">
-          <div class="card--container__inner-card">
-            <div class="card-img">
-              <img src="dist/images/showcase_1.jpg" alt="">
-              <div class="card-img__overlay-menu">
-                <p class="overlay-msg">Comming Soon</p>
-                <a class="overlay-btn" href="id">
-                  Add to cart
-                </a>
-              </div>
-            </div>
-            <div class="card-desc">
-              <p class="title">LOREM IPSUM</p>
-              <p class="desc">LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM
-                IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM</p>
-              <p class="price">PHP 40.00</p>
-            </div>
-          </div>
-          <div class="card--container__inner-card">
-            <div class="card-img">
-              <img src="dist/images/showcase_2.jpg" alt="">
-              <div class="card-img__overlay-menu">
-                <p class="overlay-msg">Comming Soon</p>
-                <a class="overlay-btn" href="id">
-                  Add to cart
-                </a>
-              </div>
-            </div>
-            <div class="card-desc">
-              <p class="title">LOREM IPSUM</p>
-              <p class="desc">LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM
-                IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM</p>
-              <p class="price">PHP 40.00</p>
-            </div>
-          </div>
-          <div class="card--container__inner-card">
-            <div class="card-img">
-              <img src="dist/images/showcase_3.jpg" alt="">
-              <div class="card-img__overlay-menu">
-                <p class="overlay-msg">Comming Soon</p>
-                <a class="overlay-btn" href="id">
-                  Add to cart
-                </a>
-              </div>
-            </div>
-            <div class="card-desc">
-              <p class="title">LOREM IPSUM</p>
-              <p class="desc">LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM
-                IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM</p>
-              <p class="price">PHP 40.00</p>
-            </div>
-          </div>
-          <div class="card--container__inner-card">
-            <div class="card-img">
-              <img src="dist/images/showcase_4.jpg" alt="">
-              <div class="card-img__overlay-menu">
-                <p class="overlay-msg">Comming Soon</p>
-                <a class="overlay-btn" href="id">
-                  Add to cart
-                </a>
-              </div>
-            </div>
-            <div class="card-desc">
-              <p class="title">LOREM IPSUM</p>
-              <p class="desc">LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM
-                IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM</p>
-              <p class="price">PHP 40.00</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                                            <tr class="body03__tr"><!-- 3 -->
+                                                <td class="body03__td">脂質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
 
-    <div class="primary__center primary__center--btn" id="s-product-btn">
-      <div class="btn-container">
-        <a class="btn-view" href="#">All Product</a>
-      </div>
-    </div>
-    <!-- SECTION PRODUCT END -->
-  </div>
-  <!--end of primary div-->
+                                            <tr class="body03__tr"> <!-- 4 -->
+                                                <td class="body03__td">炭水化物（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
 
-  <!--FOOTER-->
-  <div class="footer">
-    <div class="footer__content">
-      <div class="footer__content__overlay">
-      </div>
-      <div class="footer__content__container">
-        <div class="footer__content__container__left">
-          <div class="logo-frame">
-            <img src="dist/images/logo_white.png">
-          </div>
-        </div>
-        <div class="footer__content__container__center">
-          <h3 class="contact-title">
-            CONTACT
-          </h3>
-          <p class="phone">
-            <i class="fa fa-phone" aria-hidden="true"></i>0926xxxxx
-          </p>
-          <p class="location">
-            <i class="fa fa-location-arrow" aria-hidden="true"></i>6000, address here
-          </p>
-          <p class="schedule">
-            <i class="fa fa-calendar" aria-hidden="true"></i>Weekdays 9:00-18:00
-          </p>
-          <p class="email">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>example@gmail.com
-          </p>
+                                            <tr class="body03__tr"> <!-- 5 -->
+                                                <td class="body03__td">糖質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li class="p-carousel__cards">
+                                <div class="p-carousel__title"><p>プラン名プラン名</p></div>
+                                <div class="p-carousel__img"><img src="/assets/img/common/slider02.png" alt=""></div>
+                                <div class="p-carousel__table u-mt-30">
+                                    <table class="c-table">
+                                        <thead class="c-table__head head03">
+                                            <tr class="head03__tr">
+                                                <th class="head03__th">栄養素</th>
+                                                <th class="head03__th">LEAN</th>
+                                                <th class="head03__th">MAINTAIN</th>
+                                                <th class="head03__th">GAIN</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="body03">
+                                            <tr class="body03__tr"> <!-- 1 -->
+                                                <td class="body03__td">カロリー（kcal）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
 
-        </div>
-        <div class="footer__content__container__right">
-          <h3 class="social-title">
-            SOCIAL
-          </h3>
-          <p class="instagram">
-            <i class="fa fa-instagram" aria-hidden="true"></i>Lorem ipsum
-          </p>
-          <p class="facebook">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>Lorem ipsum
-          </p>
-          <p class="twitter">
-            <i class="fa fa-twitter" aria-hidden="true"></i>Lorem ipsum
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      &copy; artisan | Made by James Ocariza
-    </div>
-  </div>
+                                            <tr class="body03__tr"> <!-- 2 -->
+                                                <td class="body03__td">タンパク質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
 
-  <!-- FOOTER END-->
+                                            <tr class="body03__tr"><!-- 3 -->
+                                                <td class="body03__td">脂質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+
+                                            <tr class="body03__tr"> <!-- 4 -->
+                                                <td class="body03__td">炭水化物（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+
+                                            <tr class="body03__tr"> <!-- 5 -->
+                                                <td class="body03__td">糖質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li class="p-carousel__cards">
+                                <div class="p-carousel__title"><p>プラン名プラン名</p></div>
+                                <div class="p-carousel__img"><img src="/assets/img/common/slider03.png" alt=""></div>
+                                <div class="p-carousel__table u-mt-30">
+                                    <table class="c-table">
+                                        <thead class="c-table__head head03">
+                                            <tr class="head03__tr">
+                                                <th class="head03__th">栄養素</th>
+                                                <th class="head03__th">LEAN</th>
+                                                <th class="head03__th">MAINTAIN</th>
+                                                <th class="head03__th">GAIN</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="body03">
+                                            <tr class="body03__tr"> <!-- 1 -->
+                                                <td class="body03__td">カロリー（kcal）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+
+                                            <tr class="body03__tr"> <!-- 2 -->
+                                                <td class="body03__td">タンパク質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+
+                                            <tr class="body03__tr"><!-- 3 -->
+                                                <td class="body03__td">脂質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+
+                                            <tr class="body03__tr"> <!-- 4 -->
+                                                <td class="body03__td">炭水化物（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+
+                                            <tr class="body03__tr"> <!-- 5 -->
+                                                <td class="body03__td">糖質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>  
+                            
+                            <li class="p-carousel__cards">
+                                <div class="p-carousel__title"><p>プラン名プラン名</p></div>
+                                <div class="p-carousel__img"><img src="/assets/img/common/slider04.png" alt=""></div>
+                                <div class="p-carousel__table u-mt-30">
+                                    <table class="c-table">
+                                        <thead class="c-table__head head03">
+                                            <tr class="head03__tr">
+                                                <th class="head03__th">栄養素</th>
+                                                <th class="head03__th">LEAN</th>
+                                                <th class="head03__th">MAINTAIN</th>
+                                                <th class="head03__th">GAIN</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="body03">
+                                            <tr class="body03__tr"> <!-- 1 -->
+                                                <td class="body03__td">カロリー（kcal）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+
+                                            <tr class="body03__tr"> <!-- 2 -->
+                                                <td class="body03__td">タンパク質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+
+                                            <tr class="body03__tr"><!-- 3 -->
+                                                <td class="body03__td">脂質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+
+                                            <tr class="body03__tr"> <!-- 4 -->
+                                                <td class="body03__td">炭水化物（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+
+                                            <tr class="body03__tr"> <!-- 5 -->
+                                                <td class="body03__td">糖質（g）</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                                <td class="body03__td">0.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="l-wrap02">
+            <div class="l-container plan__inner">
+                
+                <div class="plan__table">
+                    <!-- TABLES-->
+                    <table class="c-table" style="overflow-x: auto;">
+                        <thead class="c-table__head head01">
+                            <tr class="head01__tr">
+                                <th class="head01__th">主菜</th>
+                                <th class="head01__th">エネルギー</th>
+                                <th class="head01__th">タンパク質</th>
+                                <th class="head01__th">脂質</th>
+                                <th class="head01__th">炭水化物</th>
+                                <th class="head01__th">食物繊維</th>
+                                <th class="head01__th">糖質</th>
+                                <th class="head01__th">カルシウム</th>
+                                <th class="head01__th">亜鉛</th>
+                                <th class="head01__th">ビタミンC</th>
+                            </tr>
+                        </thead>
+                        <tbody class="c-table__body body01">
+                            <tr class="body01__tr"><!--1-->
+                                <td class="body01__td body01__td--title">肉の黒酢炒め</td>
+                                <td class="body01__td">419.52kcal</td>
+                                <td class="body01__td">30.249g</td>
+                                <td class="body01__td">26.853g</td>
+                                <td class="body01__td">11.055g</td>
+                                <td class="body01__td">1.471g</td>
+                                <td class="body01__td">9.584g</td>
+                                <td class="body01__td">14.1mg</td>
+                                <td class="body01__td">3.681mg</td>
+                                <td class="body01__td">161.547mg</td>
+                            </tr>
+                            <tr class="body01__tr"><!--2-->
+                                <td class="body01__td body01__td--title">鶏胸肉の南蛮漬け</td>
+                                <td class="body01__td">238.98kcal</td>
+                                <td class="body01__td">24.349g</td>
+                                <td class="body01__td">6.123g</td>
+                                <td class="body01__td">17.689g</td>
+                                <td class="body01__td">1.58g</td>
+                                <td class="body01__td">17.31g</td>
+                                <td class="body01__td">1.028mg</td>
+                                <td class="body01__td">25.7mg</td>
+                                <td class="body01__td">25.7mg</td>
+                            </tr>
+                            <tr class="body01__tr"><!--3-->
+                                <td class="body01__td body01__td--title">牛肉とエリンギの炒めもの</td>
+                                <td class="body01__td">294.66kcal</td>
+                                <td class="body01__td">26.68g</td>
+                                <td class="body01__td">15.26g</td>
+                                <td class="body01__td">9.17g</td>
+                                <td class="body01__td">0.68g</td>
+                                <td class="body01__td">8.49g</td>
+                                <td class="body01__td">6.44mg</td>
+                                <td class="body01__td">5.132mg</td>
+                                <td class="body01__td">1.3mg</td>
+                            </tr>
+                            <tr class="body01__tr"><!--4-->
+                                <td class="body01__td body01__td--title">ぶりの中華風照り焼き</td>
+                                <td class="body01__td">279.33kcal</td>
+                                <td class="body01__td">17.979g</td>
+                                <td class="body01__td">18.154g</td>
+                                <td class="body01__td">7.67g</td>
+                                <td class="body01__td">0.591g</td>
+                                <td class="body01__td">7.079g</td>
+                                <td class="body01__td">8.89mg</td>
+                                <td class="body01__td">0.738mg</td>
+                                <td class="body01__td">20.6mg</td>
+                            </tr>
+                            <tr class="body01__tr"><!--5-->
+                                <td class="body01__td body01__td--title">鮭のレモン蒸し</td>
+                                <td class="body01__td">248.6kcal</td>
+                                <td class="body01__td">26.094g</td>
+                                <td class="body01__td">5.071g</td>
+                                <td class="body01__td">22.166g</td>
+                                <td class="body01__td">2.521g</td>
+                                <td class="body01__td">19.645g</td>
+                                <td class="body01__td">53.56mg</td>
+                                <td class="body01__td">0.737mg</td>
+                                <td class="body01__td">35.9mg</td>
+                            </tr>
+                            <tr class="body01__tr"><!--6-->
+                                <td class="body01__td body01__td--title">アジのカレーソテー</td>
+                                <td class="body01__td">299.1kcal</td>
+                                <td class="body01__td">27.3g</td>
+                                <td class="body01__td">14.7g</td>
+                                <td class="body01__td">11.6g</td>
+                                <td class="body01__td">1.8g</td>
+                                <td class="body01__td">9.8g</td>
+                                <td class="body01__td">111.7mg</td>
+                                <td class="body01__td">1.6mg</td>
+                                <td class="body01__td">0.1mg</td>
+                            </tr>
+                            <tr class="body01__tr"><!--7-->
+                                <td class="body01__td body01__td--title">タラのトマトソース煮</td>
+                                <td class="body01__td">227.0kcal</td>
+                                <td class="body01__td">31.0g</td>
+                                <td class="body01__td">0.7g</td>
+                                <td class="body01__td">20.2g</td>
+                                <td class="body01__td">3.6g</td>
+                                <td class="body01__td">16.6g</td>
+                                <td class="body01__td">90.1mg</td>
+                                <td class="body01__td">1.2mg</td>
+                                <td class="body01__td">34.2mg</td>
+                            </tr>
+                            <tr class="body01__tr"> <!--8-->
+                                <td class="body01__td body01__td--title">ブロッコリーとツナの豆板醤炒め</td>
+                                <td class="body01__td">267.6kcal</td>
+                                <td class="body01__td">25.8g</td>
+                                <td class="body01__td">11.6g</td>
+                                <td class="body01__td">13.1g</td>
+                                <td class="body01__td">5.6g</td>
+                                <td class="body01__td">7.5g</td>
+                                <td class="body01__td">84.1mg</td>
+                                <td class="body01__td">2.2mg</td>
+                                <td class="body01__td">145.3mg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br><br>
+                    <table class="c-table">
+                        <thead class="c-table__head head02">
+                            <tr class="head02__tr">
+                                <th class="head02__th">副菜</th>
+                                <th class="head02__th">エネルギー</th>
+                                <th class="head02__th">タンパク質</th>
+                                <th class="head02__th">脂質</th>
+                                <th class="head02__th">炭水化物</th>
+                                <th class="head02__th">食物繊維</th>
+                                <th class="head02__th">糖質</th>
+                                <th class="head02__th">カルシウム</th>
+                                <th class="head02__th">亜鉛</th>
+                                <th class="head02__th">ビタミンC</th>
+                            </tr>
+                        </thead>
+                        <tbody class="c-table__body body02">
+                            <tr class="body02__tr"><!-- 1 -->
+                                <td class="body02__td body02__td--title">たこと大根の煮物</td>
+                                <td class="body02__td">63.6kcal</td>
+                                <td class="body02__td">6.0g</td>
+                                <td class="body02__td">0.3g</td>
+                                <td class="body02__td">7.9g</td>
+                                <td class="body02__td">0.9g</td>
+                                <td class="body02__td">7.0g</td>
+                                <td class="body02__td">24.9mg</td>
+                                <td class="body02__td">2.9mg</td>
+                                <td class="body02__td">7.8mg</td>
+                            </tr>
+                            <tr class="body02__tr"><!--2-->
+                                <td class="body02__td body02__td--title">イカのガーリックグリル</td>
+                                <td class="body02__td">96.3kcal</td>
+                                <td class="body02__td">6.97g</td>
+                                <td class="body02__td">4.677g</td>
+                                <td class="body02__td">6.512g</td>
+                                <td class="body02__td">2.685g</td>
+                                <td class="body02__td">3.827g</td>
+                                <td class="body02__td">136.56mg</td>
+                                <td class="body02__td">0.569mg</td>
+                                <td class="body02__td">48.62mg</td>
+                            </tr>
+                            <tr class="body02__tr"><!--3-->
+                                <td class="body02__td body02__td--title">ひじきとほうれん草の卵とじ</td>
+                                <td class="body02__td">117.76kcal</td>
+                                <td class="body02__td">7.736g</td>
+                                <td class="body02__td">5.398g</td>
+                                <td class="body02__td">10.301g</td>
+                                <td class="body02__td">2.912g</td>
+                                <td class="body02__td">7.389g</td>
+                                <td class="body02__td">82.87mg</td>
+                                <td class="body02__td">0.954mg</td>
+                                <td class="body02__td">10.5mg</td>
+                            </tr>
+                            <tr class="body02__tr"><!--4-->
+                                <td class="body02__td body02__td--title">レバーのカレー炒め</td>
+                                <td class="body02__td">95.275kcal</td>
+                                <td class="body02__td">8.053g</td>
+                                <td class="body02__td">5.361g</td>
+                                <td class="body02__td">2.835g</td>
+                                <td class="body02__td">0.8745g</td>
+                                <td class="body02__td">0.8745g</td>
+                                <td class="body02__td">8.625mg</td>
+                                <td class="body02__td">1.4125mg</td>
+                                <td class="body02__td">30.81mg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="plan__spacer"></div>
+    </section>
+    
+    <section class="footer01">
+        <div class="l-wrap">
+            <div class="l-container footer01__inner">
+                <div class="footer01__top u-d-f">
+                    <button class="c-btn01 c-btn01--color01"><span>今すぐ始める</span> <img src="/assets/img/common/button_after.png" alt=""></button>
+                </div>
+                <div class="footer01__spacer"></div>
+                <div class="footer01__center">
+                    <div class="logo-footer">
+                        <img src="/assets/img/common/logo-bottom.png" alt="GUIDE FOOD">
+                    </div>
+                    <div class="features u-mt-120">
+                        <ul>
+                            <li>
+                                <div class="features__top u-d-f">
+                                    <img src="/assets/img/common/feature01.svg" alt="MUSCLE" class="features__img">
+                                    <div class="features__title">高タンパク・低カロリー<div class="features__overlay"></div></div>
+                                </div>
+                                <div class="features__bottom">
+                                    <div class="features__desc">筋肉づくりに必要なタンパク質、ビタミンB群を多く含み、糖質が少ないメニューを取り揃えています。</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="features__top u-d-f">
+                                    <img src="/assets/img/common/feature02.svg" alt="PLAN" class="features__img">
+                                    <div class="features__title">目的に合わせて選べるプラン <div class="features__overlay"></div></div>
+                                </div>
+                                <div class="features__bottom">
+                                    <div class="features__desc">目的別に減量、維持、増量の3プランをご用意しています。</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="features__top u-d-f">
+                                    <img src="/assets/img/common/feature03.svg" alt="BEST CHOICES" class="features__img">
+                                    <div class="features__title">管理栄養士と料理人との特別メニュー <div class="features__overlay"></div></div>
+                                </div>
+                                <div class="features__bottom">
+                                    <div class="features__desc">ガイドフードの管理栄養士が栄養素を計算し、料理人がメニューを作成しています。</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="features__top u-d-f">
+                                    <img src="/assets/img/common/feature04.svg" alt="MENU" class="features__img">
+                                    <div class="features__title">メニューが豊富で飽きない <div class="features__overlay"></div></div>
+                                </div>
+                                <div class="features__bottom">
+                                    <div class="features__desc">メニューが増え続けるので毎日飽きずに無理なく続けられます。</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="features__top u-d-f">
+                                    <img src="/assets/img/common/feature05.svg" alt="HEART" class="features__img">
+                                    <div class="features__title">とにかく美味しい <div class="features__overlay"></div></div>
+                                </div>
+                                <div class="features__bottom">
+                                    <div class="features__desc">プロの料理人が作る料理なので本当に美味しいです。</div>
+                                </div>
+                            </li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer01__bottom u-mt-120">
+                    <div class="link">
+                        <h1><a href="https://guidefood.thebase.in"><img src="/assets/img/common/shopping_link.png" loading="lazy" alt="SHOPPING SITE"></a></h1>
+                    </div>
+                    <div class="footer01__btn u-mt-105 u-mb-100 u-d-f">
+                        <button class="c-btn01 c-btn01--color02"><span>お問い合わせ</span> <img src="/assets/img/common/button_after.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright u-mt-50">
+        <p>Copyright© 2020 GUIDE FOOD All Rights Reserved.</p>
+    </div>
+<!-- SLICK JS -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="/js/slick.js"></script>
 </body>
-<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="js/jquery.easeScroll.js"></script>
-<script src="js/app.js"></script>
-
 </html>

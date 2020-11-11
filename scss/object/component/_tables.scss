@@ -1,0 +1,99 @@
+.c-table{
+    text-align:center;
+    border-collapse:collapse;
+    width:100%;
+    border-spacing: 0;
+    
+    &__head{
+        color:$colortext-secondary;
+    }
+    &__body{
+        td:nth-child(1){
+            width:30%;
+            
+        }
+
+    }
+    // red 
+    .head01{
+        background-color: $colortext01;
+        border-right:1px dotted $color-table;
+        
+        &__tr,&__th{
+            padding:10px 0;   
+        }
+        &__tr{}
+        &__th{
+            border-left:1px dotted $color-table;
+        }
+    }
+    .body01{
+        &__tr,&__td{
+            padding:10px 0;   
+        }
+        &__tr{
+            border:1px solid $color-table;
+            border-left:1px dotted $color-table;
+            border-right:1px dotted $color-table;
+            border-top:none;
+        }
+        &__td{
+            border-left:1px dotted $color-table;
+            
+            &--title{}
+        }
+    }
+    //green
+    .head02{
+        background-color:$colortext03;
+        border-right:1px dotted $color-table;
+        &__tr,&__th{
+            padding:10px 0;   
+        }
+        &__tr{}
+        &__th{
+            border-left:1px dotted $color-table;
+        }
+    }
+    .body02{
+        &__tr,&__td{
+            padding:10px 0;   
+        }
+        &__tr{
+            border-bottom:1px solid $color-table;
+            border-top:none;
+        }
+        &__td{
+            border-left:1px dotted $color-table;
+            border-right:1px dotted $color-table;
+            
+            &--title{}
+        }
+    }
+
+    // Black carousel slider
+    .head03{
+        background-color:#231815;
+        border-right:1px dotted $color-table;
+        &__tr,&__th{
+            padding:10px 0;   
+        }
+        &__tr{}
+        &__th{
+            border-left:1px dotted $color-table;
+        }
+    }
+    .body03{
+        &__tr,&__td{
+            padding:10px 0;   
+        }
+        &__tr{
+            border-bottom:1px solid $color-table;
+            border-top:none;
+        }
+        &__td{
+            border-left:1px dotted $color-table;
+            border-right:1px dotted $color-table;
+        }
+    }
+}

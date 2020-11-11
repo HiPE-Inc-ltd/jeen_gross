@@ -1,0 +1,45 @@
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+VARIABLE FOR MIXINS BREAKPOINTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+$breakpoint-sp:750px;
+$breakpoint-tablet:$breakpoint-sp + 1;
+$breakpoint-pc: 0;
+
+$base-size: 5;
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+VARIABLE FOR MIXINS WRAPPER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+$body-max-width: 1020px;
+$gutter-sp:10px;
+$gutter-pc:20px;
+
+
+ /*
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ VARIABLE FOR MIXINS _font-line.scss 
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ */
+
+ $font-size-base: 16;
+ $font-weight-base: 500;
+ $line-height-base: 1.75;
+
+  /*
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ VARIABLE FOR MIXINS FONT COLOR
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ */
+
+ $colortext-primary:#000000;
+ $colortext-secondary:#FFF;
+ $colortext01:#E40038;
+ $colortext02:#F6B42C;
+ $colortext03:#009472;
+ $colortext04:#479FE8;
+
+ $color-overlay:#FFDB00;
+ $color-table:#959595;

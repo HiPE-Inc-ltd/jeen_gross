@@ -1,0 +1,56 @@
+.l-wrap {
+   @include is-pc{
+       max-width: $body-max-width;
+       margin:0 auto;
+       padding:0 $gutter-pc;
+   }
+
+   @include is-tablet{
+       margin:0 auto;
+       padding:0 $gutter-pc;
+   }
+
+   @include is-sp{
+       margin:0 auto;
+       padding: 0 $gutter-sp;
+   }
+
+}
+
+.l-wrap02 {
+    @include is-pc{
+        max-width: 1440px;
+        margin:0 auto;
+        padding:0 $gutter-pc;
+    }
+ 
+    @include is-tablet{
+        margin:0 auto;
+        padding:0 $gutter-pc;
+    }
+ 
+    @include is-sp{
+        margin:0 auto;
+        padding: 0 $gutter-sp;
+    }
+ 
+ }
+
+ .l-wrap-fluid {
+    @include is-pc{
+        width: 100%;
+        margin:0 auto;
+        padding:0 $gutter-pc;
+    }
+ 
+    @include is-tablet{
+        margin:0 auto;
+        padding:0 $gutter-pc;
+    }
+ 
+    @include is-sp{
+        margin:0 auto;
+        padding: 0 $gutter-sp;
+    }
+ 
+ }

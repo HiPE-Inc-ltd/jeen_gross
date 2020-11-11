@@ -64,17 +64,7 @@ $(document).on('click', 'a[href^="#"]', function (e) {
   });
 });
 
-$('.faq_container').on('click', function () {
-  var $this = $(this);
-  $(this).find('.faq_up-arrow, .faq_down-arrow').toggle();
-  if ($(this).hasClass("active")) {
-    $(this).find(".answer").slideUp();
-    $(this).removeClass("active");
-  } else {
-    $(this).find(".answer").slideDown();
-    $(this).addClass("active");
-  }
-});
+
 
 $("html").easeScroll({
   frameRate: 60,
