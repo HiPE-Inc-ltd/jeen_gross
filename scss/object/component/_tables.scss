@@ -3,9 +3,12 @@
     border-collapse:collapse;
     width:100%;
     border-spacing: 0;
-    
+    @include is-pc{
+        @include font-line(24);
+    }
     &__head{
         color:$colortext-secondary;
+
     }
     &__body{
         td:nth-child(1){

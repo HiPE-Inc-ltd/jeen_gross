@@ -1,6 +1,6 @@
 $('.center').slick({
-    // centerMode: true,
-    // centerPadding: '80px',
+    centerMode: true,
+    centerPadding: '80px',
     lazyLoad: 'ondemand',
     dots: true,
     nextArrow :'.next-arrow',

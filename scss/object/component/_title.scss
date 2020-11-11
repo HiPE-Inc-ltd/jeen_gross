@@ -19,6 +19,9 @@
     }
     &__subtitle{
         padding-top:20px;
+        @include is-pc{
+            @include font-line(31);
+        }
         &--color01{
             color:$colortext01;
         }
@@ -37,8 +40,8 @@
     }
     &__desc{
         padding-top:80px;
-        // @include is-pc{
-        //     @include font-line(18);
-        // }
+        @include is-pc{
+            @include font-line(18);
+        }
     }
 }
