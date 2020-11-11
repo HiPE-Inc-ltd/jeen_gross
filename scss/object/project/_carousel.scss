@@ -2,10 +2,9 @@
     &__nav{
         display:flex;
         position:relative;
-        top:50%;
         z-index:9999;
         margin:0 auto;
-        transform:translateY(50vh);
+        transform:translateY(47em);
         .prev-arrow{
             text-align: left;
             width: 50%;
@@ -20,14 +19,13 @@
     }
     &__slider{}
     &__cards{
-        padding:0 20px;
-        margin:0 20px;
+        margin:0 10px;
     }
     &__title{
         text-align:center;
         font-weight:700;
         @include is-pc{
-            @include font-line(32);
+            @include font-line(35);
         }
     }
     &__img{}

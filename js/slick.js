@@ -1,11 +1,11 @@
 $('.center').slick({
     centerMode: true,
-    centerPadding: '80px',
+    centerPadding: '0px',
+    slidesToShow: 1,
     lazyLoad: 'ondemand',
     dots: true,
     nextArrow :'.next-arrow',
     prevArrow :'.prev-arrow',
-    slidesToShow: 2,
     variableWidth: true,
     responsive: [
       {
@@ -14,7 +14,7 @@ $('.center').slick({
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 2
         }
       },
       {

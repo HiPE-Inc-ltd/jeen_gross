@@ -199,12 +199,10 @@
         text-align: center;
     }
     .features{
-        li{
-            margin:32px 0;
-        }
         &__top{}
         &__bottom{
-            padding-top:50px;
+            margin-top:14px;
+            margin-bottom:86px;
         }
         &__img{
             width:68px;
@@ -214,14 +212,14 @@
             position:relative;
             font-weight:700;
             @include is-pc{
-                @include font-line(48);
+                @include font-line(46);
             }
 
             margin-left:10px;
         }
         &__desc{
             @include is-pc{
-                @include font-line(23);
+                @include font-line(18);
             }
             padding-left:8%;
         }
@@ -284,7 +282,6 @@
             cursor: pointer;
             &:hover, &:focus {
                 outline: none;
-                
             }
             &:before {
                 position: absolute;
