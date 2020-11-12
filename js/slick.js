@@ -1,7 +1,8 @@
 $('.center').slick({
     centerMode: true,
-    centerPadding: '0px',
-    slidesToShow: 1,
+    centerPadding: '60px',
+    slidesToShow: 2,
+    slidestoScroll:1,
     lazyLoad: 'ondemand',
     dots: true,
     nextArrow :'.next-arrow',

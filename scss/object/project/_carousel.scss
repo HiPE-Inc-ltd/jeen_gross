@@ -30,12 +30,15 @@
     }
     &__slider{}
     &__cards{
-        margin:0 10px;
+        margin:0px 10px;
     }
     &__title{
         text-align:center;
         font-weight:700;
         @include is-pc{
+            @include font-line(35);
+        }
+        @include is-tablet{
             @include font-line(35);
         }
     }
