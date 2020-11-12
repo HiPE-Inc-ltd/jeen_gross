@@ -42,7 +42,11 @@
             @include font-line(35);
         }
     }
-    &__img{}
+    &__img{
+        img{
+            margin:0 auto;
+        }
+    }
     &__table{
         width:100%;
         text-align:center;

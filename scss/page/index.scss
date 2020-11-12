@@ -55,6 +55,9 @@
 
     &__img{}
     .checklist{
+        @include is-between{
+            letter-spacing:-5px;
+        }
         ul{
             position:relative;
         }
@@ -66,6 +69,14 @@
             @include is-tablet{
                 @include font-line(30);
                 padding:10px 0;
+            }
+            @include is-sp{
+                @include font-line(12);
+            }
+        }
+        &__img{
+            @include is-sp{
+            width:5%;
             }
         }
         &__text{
@@ -85,14 +96,12 @@
     }
 
     .red-girl{
-        width:600px;
+        max-width:540px;
         position: absolute;
         right:0%;
-        top:5%;
+        bottom:38%;
         z-index:-1;
-        @include is-between{
-            display:none;
-        }
+        width:38.8%;
         @include is-tablet{
             display:none;
         }
@@ -242,6 +251,11 @@
         justify-content: center;
     }
     &__spacer{height: 142px;}
+    &__table{
+        @include is-sp{
+            overflow-x:scroll;
+        }
+    }
 }
   /*
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -388,4 +402,7 @@
             content:url('/assets/img/common/btn-active.svg');
         }
     }
+}
+.slick-list{
+
 }
