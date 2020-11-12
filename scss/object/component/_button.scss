@@ -1,12 +1,15 @@
 .c-btn01{
     padding:0px 50px;
-    border-radius:40px;
+    border-radius:25px;
     color: $colortext-secondary;
     display: flex;
     align-items: center;
     justify-content: center;
     @include is-pc{
-        @include font-line(62);
+        @include font-line(46);
+    }
+    @include is-tablet{
+        @include font-line(94);
     }
     &--color01{
         background-color: $colortext01;

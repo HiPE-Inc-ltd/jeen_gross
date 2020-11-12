@@ -6,6 +6,9 @@
     @include is-pc{
         @include font-line(18);
     }
+    @include is-tablet{
+        @include font-line(12);
+    }
     &__head{
         color:$colortext-secondary;
 

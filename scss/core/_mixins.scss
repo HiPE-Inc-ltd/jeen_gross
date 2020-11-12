@@ -6,20 +6,26 @@
 //
 // ---------------------------------------------------------------
 @mixin is-pc {
-    @media only screen and (min-width: $breakpoint-tablet + 1) {
+    @media only screen and (min-width: $breakpoint-pc + 1){
         @content;
     }
 }
 
 
 @mixin is-tablet {
-    @media only screen and (min-width: $breakpoint-sp + 1){
+    @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-pc){
         @content;
     }
 }
 
 @mixin is-sp {
     @media only screen and (max-width: $breakpoint-sp){
+        @content;
+    }
+}
+
+@mixin is-between{
+    @media (max-width: $between-max) and (min-width: $between-min) {
         @content;
     }
 }
