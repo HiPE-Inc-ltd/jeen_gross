@@ -3,9 +3,12 @@
 VARIABLE FOR MIXINS BREAKPOINTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 */
-$breakpoint-sp:750px;
-$breakpoint-tablet:$breakpoint-sp + 1;
-$breakpoint-pc: 0;
+$breakpoint-sp:480px;
+$breakpoint-tablet:768px;
+$breakpoint-pc: 1020px;
+
+$between-min: 1021px;
+$between-max: 1800px;
 
 $base-size: 5;
 /*

@@ -5,6 +5,9 @@
         z-index:9999;
         margin:0 auto;
         transform:translateY(47em);
+        @include is-tablet{
+            transform:translateY(46em);
+        }
         .prev-arrow{
             text-align: left;
             width: 50%;
@@ -16,15 +19,26 @@
         .prev-arrow,.next-arrow{
             cursor: pointer;
         }
+        .prev-arrow,
+        .next-arrow{
+            img{
+                @include is-tablet{
+                    width:25%;
+                }
+            }
+        }
     }
     &__slider{}
     &__cards{
-        margin:0 10px;
+        margin:0px 10px;
     }
     &__title{
         text-align:center;
         font-weight:700;
         @include is-pc{
+            @include font-line(35);
+        }
+        @include is-tablet{
             @include font-line(35);
         }
     }

@@ -35,13 +35,20 @@
  */
 .objectives{
     position:relative;
-    background:url('/assets/img/common/bg_objectives.png');
+    background:url('/assets/img/common/bg-objectives.png');
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
     z-index:99;
-    &__inner{    }
-    &__top{}
+    &__inner{
+        @include is-between{overflow:hidden;}
+        @include is-tablet{overflow:hidden;}
+        }
+    &__top{
+        @include is-tablet{
+            margin-top:10px !important;
+        }
+    }
     &__bottom{
         text-align:center;
     }
@@ -55,6 +62,10 @@
             display:flex;
             @include is-pc{
                 @include font-line(42);
+            }
+            @include is-tablet{
+                @include font-line(30);
+                padding:10px 0;
             }
         }
         &__text{
@@ -74,10 +85,20 @@
     }
 
     .red-girl{
-        width:720px;
+        width:600px;
         position: absolute;
         right:0%;
         top:5%;
+        z-index:-1;
+        @include is-between{
+            display:none;
+        }
+        @include is-tablet{
+            display:none;
+        }
+        @include is-sp{
+            display:none;
+        }
     }
     
     
@@ -89,20 +110,33 @@
  */
 .concept{
     position:relative;
-    background:url('/assets/img/common/concept_img.png');
+    background:url('/assets/img/common/bg-concept.png');
     width:100%;
     background-size:50%;
     background-repeat: no-repeat;
+    background-position:0;
     z-index:99;
     padding:200px 0px;
-    &__inner{
-        
+    @include is-tablet{
+        background:none;
+        padding-top:100px;
+        padding-bottom:0px;
     }
+    &__inner{}
     &__top{}
     &__bottom{}
 
-    &__left{}
-    &__right{}
+    &__left{
+        @include is-tablet{
+            width:0%;
+        }
+    }
+    &__right{
+        @include is-tablet{
+            width:90%;
+            margin:0 auto;
+        }
+    }
 
     &__img{
         position: absolute;
@@ -116,19 +150,33 @@
  */
 .commitment{
     position:relative;
-    background:url('/assets/img/common/commitment_img.png');
+    background:url('/assets/img/common/bg-commitment.png');
     width:100%;
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 100%;
     z-index:99;
     padding:200px 0px;
+    @include is-tablet{
+        background:none;
+        padding-top:100px;
+        padding-bottom:0px;
+    }
     &__inner{}
     &__top{}
     &__bottom{}
 
-    &__left{}
-    &__right{}
+    &__left{
+        @include is-tablet{
+            width:90%;
+            margin:0 auto;
+        }
+    }
+    &__right{
+        @include is-tablet{
+            width:0;
+        }
+    }
     &__img{
         position: absolute;
         right:-30%;
@@ -142,13 +190,40 @@
  */
 .pfc{
     position: relative;
-    background: url('/assets/img/common/pfc_image.png');
+    background: url('/assets/img/common/bg-pfc.png');
     width: 100%;
     background-size: 65%;
     background-repeat: no-repeat;
     z-index: 99;
     background-position-y: 70%;
     padding: 200px 0px;
+    @include is-tablet{
+        background:none;
+        padding-top:100px;
+        padding-bottom:0px;
+    }
+    &__top{
+        @include is-tablet{
+            width:90%;
+            margin:0 auto;
+            img{
+                width:100%;
+            }
+        }
+        
+    }
+    &__bottom{}
+    &__left{
+        @include is-tablet{
+            width:0%;
+        }
+    }
+    &__right{
+        @include is-tablet{
+            width:90%;
+            margin:0 auto;
+        }
+    }
 }
   /*
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -157,9 +232,7 @@
  */
 .plan{
     &__inner{
-        @include is-tablet{
-            overflow-x:auto;
-        }
+        margin-top:160px;
     }
     &__top{}
     &__center{}
@@ -182,6 +255,12 @@
     background-repeat: no-repeat;
     background-position: 100% 0%;
     z-index:99;
+    @include is-tablet{
+        background:none;
+    }
+    &__inner{
+        @include is-tablet{overflow:hidden;}
+    }
     &__top{
         justify-content: center;
     }
@@ -191,6 +270,9 @@
     }
     &__spacer{
         height:565px;
+        @include is-tablet{
+            height:0;
+        }
     }
     &__btn{
         justify-content:center;
@@ -206,6 +288,7 @@
         }
         &__img{
             width:68px;
+            height:68px;
         }
 
         &__title{
@@ -213,6 +296,9 @@
             font-weight:700;
             @include is-pc{
                 @include font-line(46);
+            }
+            @include is-tablet{
+                @include font-line(36);
             }
 
             margin-left:10px;
@@ -222,6 +308,9 @@
                 @include font-line(18);
             }
             padding-left:8%;
+            @include is-tablet{
+                padding-left: 77px;
+            }
         }
         &__overlay{
             position: absolute;
@@ -253,7 +342,7 @@
  */
 .slick-dots {
     position: absolute;
-    bottom: -6%;
+    bottom: -12%;
     list-style: none;
     display: block;
     text-align: center;
