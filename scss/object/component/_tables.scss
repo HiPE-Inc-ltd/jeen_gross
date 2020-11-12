@@ -9,6 +9,12 @@
     @include is-tablet{
         @include font-line(12);
     }
+    @include is-sp{
+        width:1000px;
+    }
+    &--03{
+        width:100% !important;
+    }
     &__head{
         color:$colortext-secondary;
 
@@ -18,7 +24,6 @@
             width:30%;
             
         }
-
     }
     // red 
     .head01{
