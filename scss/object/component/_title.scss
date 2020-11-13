@@ -19,9 +19,7 @@
     }
     &__subtitle{
         padding-top:20px;
-        @include is-pc{
-            @include font-line(24);
-        }
+        @include font-line(24);
         &--color01{
             color:$colortext01;
         }
