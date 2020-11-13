@@ -43,6 +43,7 @@
     &__inner{
         @include is-between{overflow:hidden;}
         @include is-tablet{overflow:hidden;}
+        @include is-sp{overflow:hidden;}
         }
     &__top{
         @include is-tablet{
@@ -71,7 +72,8 @@
                 padding:10px 0;
             }
             @include is-sp{
-                @include font-line(12);
+                @include font-line(19.8);
+                padding:10px 0;
             }
         }
         &__img{
@@ -89,10 +91,16 @@
             background-color:$color-overlay;
             bottom:13%;
             z-index:-1;
+            @include is-sp{
+                height:1.15vh;
+            }
         }
     }
     .bubbletext{
         transform:translateY(-5%);
+        @include is-sp{
+            img{width:25%;}
+        }
     }
 
     .red-girl{
@@ -131,6 +139,11 @@
         padding-top:100px;
         padding-bottom:0px;
     }
+    @include is-sp{
+        background:none;
+        padding-top:100px;
+        padding-bottom:0px;
+    }
     &__inner{}
     &__top{}
     &__bottom{}
@@ -139,9 +152,16 @@
         @include is-tablet{
             width:0%;
         }
+        @include is-sp{
+            width:0%;
+        }
     }
     &__right{
         @include is-tablet{
+            width:90%;
+            margin:0 auto;
+        }
+        @include is-sp{
             width:90%;
             margin:0 auto;
         }
@@ -171,6 +191,11 @@
         padding-top:100px;
         padding-bottom:0px;
     }
+    @include is-sp{
+        background:none;
+        padding-top:100px;
+        padding-bottom:0px;
+    }
     &__inner{}
     &__top{}
     &__bottom{}
@@ -180,10 +205,17 @@
             width:90%;
             margin:0 auto;
         }
+        @include is-sp{
+            width:90%;
+            margin:0 auto;
+        }
     }
     &__right{
         @include is-tablet{
             width:0;
+        }
+        @include is-sp{
+            width:0%;
         }
     }
     &__img{
@@ -211,6 +243,11 @@
         padding-top:100px;
         padding-bottom:0px;
     }
+    @include is-sp{
+        background:none;
+        padding-top:100px;
+        padding-bottom:0px;
+    }
     &__top{
         @include is-tablet{
             width:90%;
@@ -219,6 +256,11 @@
                 width:100%;
             }
         }
+        @include is-sp{
+            width:90%;
+            margin:0 auto;
+            img{width:100%;}
+        }
         
     }
     &__bottom{}
@@ -226,9 +268,16 @@
         @include is-tablet{
             width:0%;
         }
+        @include is-sp{
+            width:0%;
+        }
     }
     &__right{
         @include is-tablet{
+            width:90%;
+            margin:0 auto;
+        }
+        @include is-sp{
             width:90%;
             margin:0 auto;
         }
@@ -272,8 +321,12 @@
     @include is-tablet{
         background:none;
     }
+    @include is-sp{
+        background:none;
+    }
     &__inner{
         @include is-tablet{overflow:hidden;}
+        @include is-sp{overflow:hidden;}
     }
     &__top{
         justify-content: center;
@@ -285,6 +338,9 @@
     &__spacer{
         height:565px;
         @include is-tablet{
+            height:0;
+        }
+        @include is-sp{
             height:0;
         }
     }
@@ -314,15 +370,21 @@
             @include is-tablet{
                 @include font-line(36);
             }
+            @include is-sp{
+                @include font-line(22);
+            }
 
             margin-left:10px;
         }
         &__desc{
+            padding-left:8%;
             @include is-pc{
                 @include font-line(18);
             }
-            padding-left:8%;
             @include is-tablet{
+                padding-left: 77px;
+            }
+            @include is-sp{
                 padding-left: 77px;
             }
         }
@@ -333,6 +395,10 @@
             background-color:$color-overlay;
             bottom:13%;
             z-index:-1;
+            @include is-sp{
+                bottom:45%;
+                height:2vh;
+            }
         }
     }
 }
@@ -347,6 +413,12 @@
     color:$colortext-secondary;
     background-color:#4C4948;
     padding:25px 0;
+    @include is-tablet{
+        @include font-line(14);
+    }
+    @include is-sp{
+        @include font-line(12);
+    }
 }
 
   /*
@@ -403,6 +475,6 @@
         }
     }
 }
-.slick-list{
-
+.slick-slide {
+    width: 460px;
 }
