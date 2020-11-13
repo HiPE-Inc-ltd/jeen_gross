@@ -41,7 +41,7 @@
     &__title{
         text-align:center;
         font-weight:700;
-        font-size:35px;
+        @include font-line(35);
     }
     &__img{
         img{
