@@ -49,6 +49,9 @@
         @include is-tablet{
             margin-top:10px !important;
         }
+        @include is-sp{
+            margin-top:10px !important;
+        }
     }
     &__bottom{
         text-align:center;
@@ -377,15 +380,12 @@
             margin-left:10px;
         }
         &__desc{
-            padding-left:8%;
+            padding-left: 77px;
             @include is-pc{
                 @include font-line(18);
             }
-            @include is-tablet{
-                padding-left: 77px;
-            }
             @include is-sp{
-                padding-left: 77px;
+                @include font-line(14);
             }
         }
         &__overlay{
