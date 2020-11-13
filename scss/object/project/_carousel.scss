@@ -4,9 +4,12 @@
         position:relative;
         z-index:9999;
         margin:0 auto;
-        transform:translateY(47em);
+        transform:translateY(43em);
         @include is-tablet{
-            transform:translateY(46em);
+            transform:translateY(42em);
+        }
+        @include is-sp{
+            transform:translateY(38em);
         }
         .prev-arrow{
             text-align: left;
@@ -25,22 +28,20 @@
                 @include is-tablet{
                     width:25%;
                 }
+                @include is-sp{
+                    width:25%;
+                }
             }
         }
     }
     &__slider{}
     &__cards{
-        margin:0px 10px;
+        margin:0px 20px;
     }
     &__title{
         text-align:center;
         font-weight:700;
-        @include is-pc{
-            @include font-line(35);
-        }
-        @include is-tablet{
-            @include font-line(35);
-        }
+        font-size:35px;
     }
     &__img{
         img{

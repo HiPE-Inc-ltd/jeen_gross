@@ -11,11 +11,21 @@
     @include is-tablet{
         @include font-line(94);
     }
+    @include is-sp{
+        @include font-line(49);
+    }
     &--color01{
         background-color: $colortext01;
     }
     &--color02{
         background-color: $colortext03;
+    }
+    img{
+        transform: translateX(36px);
+        width: 50px;
+        @include is-tablet{
+            width:64px;
+        }
     }
 
 }
