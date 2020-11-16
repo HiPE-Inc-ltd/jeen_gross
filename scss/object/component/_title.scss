@@ -1,22 +1,4 @@
 .c-title{
-    &__title{
-        // @include is-pc{
-        //     @include font-line(50);
-        // }
-        font-weight:600;
-        &--color01{
-            color:$colortext01;
-        }
-        &--color02{
-            color:$colortext02;
-        }
-        &--color03{
-            color:$colortext03;
-        }
-        &--color04{
-            color:$colortext04;
-        }
-    }
     &__subtitle{
         padding-top:20px;
         @include font-line(24);

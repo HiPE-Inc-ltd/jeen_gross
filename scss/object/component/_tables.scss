@@ -33,7 +33,6 @@
         &__tr,&__th{
             padding:10px 0;   
         }
-        &__tr{}
         &__th{
             border-left:1px dotted $color-table;
         }
@@ -61,7 +60,6 @@
         &__tr,&__th{
             padding:10px 0;   
         }
-        &__tr{}
         &__th{
             border-left:1px dotted $color-table;
         }
@@ -77,8 +75,6 @@
         &__td{
             border-left:1px dotted $color-table;
             border-right:1px dotted $color-table;
-            
-            &--title{}
         }
     }
 
@@ -89,7 +85,6 @@
         &__tr,&__th{
             padding:10px 0;   
         }
-        &__tr{}
         &__th{
             border-left:1px dotted $color-table;
         }
