@@ -12,6 +12,10 @@
     @include is-sp{
         width:1000px;
     }
+    @include is-sm{
+        width:900px;
+        @include font-line(12);
+    }
     &--03{
         width:100% !important;
     }

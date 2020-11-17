@@ -11,6 +11,9 @@
         @include is-sp{
             transform:translateY(38em);
         }
+        @include is-sm{
+            transform:translateY(450px);
+        }
         .prev-arrow{
             text-align: left;
             width: 50%;
@@ -31,6 +34,9 @@
                 @include is-sp{
                     width:25%;
                 }
+                @include is-sm{
+                    width:25%;
+                }
             }
         }
     }
@@ -41,6 +47,9 @@
         text-align:center;
         font-weight:700;
         @include font-line(35);
+        @include is-sm{
+            @include font-line(24);
+        }
     }
     &__img{
         img{
