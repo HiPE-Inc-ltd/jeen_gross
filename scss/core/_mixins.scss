@@ -24,6 +24,12 @@
     }
 }
 
+@mixin is-sm {
+    @media only screen and (min-width:$breakpoint-sm ) and (max-width: $breakpoint-sp - 1 ){
+        @content;
+    }
+}
+
 @mixin is-between{
     @media (max-width: $between-max) and (min-width: $between-min) {
         @content;
