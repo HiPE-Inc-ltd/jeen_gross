@@ -132,7 +132,7 @@
     background-repeat: no-repeat;
     background-position:0;
     z-index:99;
-    padding:200px 0px;
+    padding:100px 0px;
     @include is-tablet{
         background:none;
         padding-top:100px;
@@ -175,11 +175,11 @@
     position:relative;
     background:url('/assets/img/common/bg-commitment.png');
     width:100%;
-    background-size: 50%;
+    background-size: 47%;
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-position-x: 100%;
     z-index:99;
-    padding:200px 0px;
+    padding:150px 0px;
     @include is-tablet{
         background:none;
         padding-top:100px;
@@ -227,7 +227,6 @@
     background-repeat: no-repeat;
     z-index: 99;
     background-position-y: 70%;
-    padding: 200px 0px;
     @include is-tablet{
         background:none;
         padding-top:100px;
