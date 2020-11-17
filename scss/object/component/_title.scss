@@ -1,7 +1,13 @@
 .c-title{
     &__title{
-        &--70{@include is-sm{width:70%; margin:0 auto;}}
-        &--40{@include is-sm{width:40%; margin:0 auto;}}
+        &--70{
+            @include is-sm{width:70%; margin:0 auto;}
+            @include is-sp{width:70%; margin:0 auto;}
+        }
+        &--40{
+            @include is-sm{width:40%; margin:0 auto;}
+            @include is-sp{width:40%; margin:0 auto;}
+        }
     }
     &__subtitle{
         padding-top:20px;
@@ -32,7 +38,7 @@
         }
         @include is-sm{
             padding-top:40px;
-            @include font-line(14);
+            @include font-line(16);
         }
         @include is-pc{
             @include font-line(18);

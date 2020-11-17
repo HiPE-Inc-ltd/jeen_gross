@@ -7,14 +7,14 @@
         @include font-line(18);
     }
     @include is-tablet{
-        @include font-line(12);
+        @include font-line(16);
     }
     @include is-sp{
         width:1000px;
     }
     @include is-sm{
-        width:900px;
-        @include font-line(12);
+        width:1000px;
+        @include font-line(16);
     }
     &--03{
         width:100% !important;

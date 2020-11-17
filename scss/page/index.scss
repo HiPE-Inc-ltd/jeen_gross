@@ -83,7 +83,9 @@
                 padding:10px 0;
             }
             @include is-sm{
-                @include font-line(14);
+                @include font-line(18);
+                display:block !important;
+                text-align:center;
                 padding:10px 0;
             }
         }
@@ -92,7 +94,7 @@
             width:5%;
             }
             @include is-sm{
-                width:25px;
+                width:10%;
             }
         }
         &__text{
@@ -110,7 +112,10 @@
             }
             @include is-sm{
                 height: 1vh;
-                width: 110%;
+                width: 90%;
+                left:5%;
+                right:5%;
+
             }
         }
     }
@@ -120,7 +125,7 @@
             img{width:25%;}
         }
         @include is-sm{
-            img{width:25%;}
+            img{width:30%;}
         }
     }
 
@@ -170,7 +175,7 @@
     }
     @include is-sm{
         background:none;
-        padding-top:50px;
+        padding-top:25px;
         padding-bottom:0px;
     }
     &__left{
@@ -414,6 +419,12 @@
         text-align: center;
     }
     .features{
+        &__top{
+            @include is-sm{
+                display:block!important;
+                text-align: center;
+            }
+        }
         &__bottom{
             margin-top:14px;
             margin-bottom:86px;
@@ -421,10 +432,6 @@
         &__img{
             width:68px;
             height:68px;
-            @include is-sm{
-                width: 50px;
-                height: 50px;
-            }
         }
 
         &__title{
@@ -439,6 +446,10 @@
             @include is-sp{
                 @include font-line(22);
             }
+            @include is-sm{
+                @include font-line(22);
+                margin-left:0px;
+            }
 
             margin-left:10px;
         }
@@ -448,11 +459,12 @@
                 @include font-line(18);
             }
             @include is-sp{
-                @include font-line(14);
+                @include font-line(16);
             }
             @include is-sm{
-                @include font-line(14);
-                padding-left:60px;
+                @include font-line(16);
+                padding-left:0;
+                text-align:center;
             }
         }
         &__overlay{
@@ -469,7 +481,7 @@
             @include is-sm{
                 height: 1vh;
                 width: 110%;
-                top:31%;
+                bottom:20%;
             }
         }
     }
