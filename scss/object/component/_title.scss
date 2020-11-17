@@ -1,7 +1,14 @@
 .c-title{
+    &__title{
+        &--70{@include is-sm{width:70%; margin:0 auto;}}
+        &--40{@include is-sm{width:40%; margin:0 auto;}}
+    }
     &__subtitle{
         padding-top:20px;
         @include font-line(24);
+        @include is-sm{
+            @include font-line(18);
+        }
         &--color01{
             color:$colortext01;
         }
@@ -20,6 +27,13 @@
     }
     &__desc{
         padding-top:80px;
+        @include is-sp{
+            padding-top:40px;
+        }
+        @include is-sm{
+            padding-top:40px;
+            @include font-line(14);
+        }
         @include is-pc{
             @include font-line(18);
         }

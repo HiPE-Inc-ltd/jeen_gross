@@ -19,11 +19,15 @@
     &__logo{
         position: absolute;
         left:5%;
+        @include is-sm{
+            width: 50%;
+        }
     }
     &__texts{
         position: absolute;
         bottom:88px;
         left:-5%;
+
     }
 }
   /*
@@ -42,12 +46,16 @@
         @include is-between{overflow:hidden;}
         @include is-tablet{overflow:hidden;}
         @include is-sp{overflow:hidden;}
+        @include is-sm{overflow:hidden;}
         }
     &__top{
         @include is-tablet{
             margin-top:10px !important;
         }
         @include is-sp{
+            margin-top:10px !important;
+        }
+        @include is-sm{
             margin-top:10px !important;
         }
     }
@@ -74,10 +82,17 @@
                 @include font-line(19.8);
                 padding:10px 0;
             }
+            @include is-sm{
+                @include font-line(14);
+                padding:10px 0;
+            }
         }
         &__img{
             @include is-sp{
             width:5%;
+            }
+            @include is-sm{
+                width:25px;
             }
         }
         &__text{
@@ -93,11 +108,18 @@
             @include is-sp{
                 height:1.15vh;
             }
+            @include is-sm{
+                height: 1vh;
+                width: 110%;
+            }
         }
     }
     .bubbletext{
         transform:translateY(-5%);
         @include is-sp{
+            img{width:25%;}
+        }
+        @include is-sm{
             img{width:25%;}
         }
     }
@@ -110,9 +132,12 @@
         z-index:-1;
         width:38.8%;
         @include is-tablet{
-            display:none;
+            display:none;   
         }
         @include is-sp{
+            display:none;
+        }
+        @include is-sm{
             display:none;
         }
     }
@@ -143,11 +168,19 @@
         padding-top:100px;
         padding-bottom:0px;
     }
+    @include is-sm{
+        background:none;
+        padding-top:50px;
+        padding-bottom:0px;
+    }
     &__left{
         @include is-tablet{
             width:0%;
         }
         @include is-sp{
+            width:0%;
+        }
+        @include is-sm{
             width:0%;
         }
     }
@@ -160,10 +193,10 @@
             width:90%;
             margin:0 auto;
         }
-    }
-    &__img{
-        position: absolute;
-        left:-10%;
+        @include is-sm{
+            width:90%;
+            margin:0 auto;
+        }
     }
 }
   /*
@@ -175,12 +208,12 @@
     position:relative;
     background:url('/assets/img/common/bg-commitment.png');
     width:100%;
-    background-size: 45%;
+    background-size: 40%;
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y:50%;
     z-index:99;
-    padding:150px 0px;
+    padding:110px 0px 100px 0px;
     @include is-tablet{
         background:none;
         padding-top:100px;
@@ -188,7 +221,12 @@
     }
     @include is-sp{
         background:none;
-        padding-top:100px;
+        padding-top:50px;
+        padding-bottom:0px;
+    }
+    @include is-sm{
+        background:none;
+        padding-top:50px;
         padding-bottom:0px;
     }
     &__left{
@@ -200,6 +238,10 @@
             width:90%;
             margin:0 auto;
         }
+        @include is-sm{
+            width:90%;
+            margin:0 auto;
+        }
     }
     &__right{
         @include is-tablet{
@@ -208,10 +250,9 @@
         @include is-sp{
             width:0%;
         }
-    }
-    &__img{
-        position: absolute;
-        right:-30%;
+        @include is-sm{
+            width:0%;
+        }
     }
 
 }
@@ -238,15 +279,23 @@
         padding-top:100px;
         padding-bottom:0px;
     }
+    @include is-sm{
+        background:none;
+        padding-top:50px;
+        padding-bottom:0px;
+    }
     &__top{
         @include is-tablet{
             width:90%;
             margin:0 auto;
-            img{
-                width:100%;
-            }
+            img{width:100%;}
         }
         @include is-sp{
+            width:90%;
+            margin:0 auto;
+            img{width:100%;}
+        }
+        @include is-sm{
             width:90%;
             margin:0 auto;
             img{width:100%;}
@@ -260,6 +309,9 @@
         @include is-sp{
             width:0%;
         }
+        @include is-sm{
+            width:0%;
+        }
     }
     &__right{
         @include is-tablet{
@@ -267,6 +319,10 @@
             margin:0 auto;
         }
         @include is-sp{
+            width:90%;
+            margin:0 auto;
+        }
+        @include is-sm{
             width:90%;
             margin:0 auto;
         }
@@ -284,9 +340,20 @@
     &__title{
         justify-content: center;
     }
-    &__spacer{height: 142px;}
+    &__spacer{
+        height: 142px;
+        @include is-sm{
+            height:50px;
+        }
+        @include is-sp{
+            height: 50px;
+        }
+    }
     &__table{
         @include is-sp{
+            overflow-x:scroll;
+        }
+        @include is-sm{
             overflow-x:scroll;
         }
     }
@@ -309,15 +376,20 @@
     @include is-sp{
         background:none;
     }
+    @include is-sm{
+        background:none;
+    }
     &__inner{
         @include is-tablet{overflow:hidden;}
         @include is-sp{overflow:hidden;}
+        @include is-sm{overflow:hidden;}
     }
     &__top{
         justify-content: center;
     }
     &__bottom{
         text-align:center;
+        @include is-sm{margin-top:0px !important;}
     }
     &__spacer{
         height:565px;
@@ -327,9 +399,16 @@
         @include is-sp{
             height:0;
         }
+        @include is-sm{
+            height: 0;
+        }
     }
     &__btn{
         justify-content:center;
+        @include is-sm{
+            margin-top:50px !important;
+            margin-bottom:50px !important;
+        }
     }
     .logo-footer{
         text-align: center;
@@ -342,6 +421,10 @@
         &__img{
             width:68px;
             height:68px;
+            @include is-sm{
+                width: 50px;
+                height: 50px;
+            }
         }
 
         &__title{
@@ -367,6 +450,10 @@
             @include is-sp{
                 @include font-line(14);
             }
+            @include is-sm{
+                @include font-line(14);
+                padding-left:60px;
+            }
         }
         &__overlay{
             position: absolute;
@@ -378,6 +465,11 @@
             @include is-sp{
                 bottom:45%;
                 height:2vh;
+            }
+            @include is-sm{
+                height: 1vh;
+                width: 110%;
+                top:31%;
             }
         }
     }
@@ -397,6 +489,10 @@
         @include font-line(14);
     }
     @include is-sp{
+        @include font-line(12);
+    }
+    @include is-sm{
+        margin-top:0 !important;
         @include font-line(12);
     }
 }
@@ -456,5 +552,9 @@
     }
 }
 .slick-slide {
+    
     width: 460px;
+    @include is-sm{
+        width: 300px !important;
+    }
 }

@@ -14,7 +14,11 @@
        margin:0 auto;
        padding: 0 $gutter-sp;
    }
-
+   
+   @include is-sm{
+    margin:0 auto;
+    padding: 0 $gutter-sp;
+   }
 }
 
 .l-wrap02 {
@@ -33,7 +37,11 @@
         margin:0 auto;
         padding: 0 $gutter-sp;
     }
- 
+
+    @include is-sm{
+        margin:0 auto;
+        padding: 0 $gutter-sp;
+       }
  }
 
  .l-wrap-fluid {
@@ -52,5 +60,10 @@
         margin:0 auto;
         padding: 0 $gutter-sp;
     }
+
+    @include is-sm{
+        margin:0 auto;
+        padding: 0 $gutter-sp;
+       }
  
  }
