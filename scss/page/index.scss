@@ -100,6 +100,29 @@
         &__text{
             position: relative;
         }
+        @include is-sm{
+            li:nth-child(1) .checklist__overlay{
+                width:400px;
+            }
+            li:nth-child(2) .checklist__overlay{
+                width:250px;
+            }
+            li:nth-child(3) .checklist__overlay{
+                width:200px;
+            }
+            li:nth-child(4) .checklist__overlay{
+                width:150px;
+            }
+            li:nth-child(5) .checklist__overlay{
+                width:300px;
+            }
+            li:nth-child(6) .checklist__overlay{
+                width:200px;
+            }
+            li:nth-child(7) .checklist__overlay{
+                width:130px;
+            }
+        }
         &__overlay{
             position: absolute;
             height: 2vh;
@@ -107,14 +130,14 @@
             background-color:$color-overlay;
             bottom:13%;
             z-index:-1;
+            left:0;
+            right:0;
+            margin:0 auto;
             @include is-sp{
                 height:1.15vh;
             }
             @include is-sm{
                 height: 1vh;
-                width: 90%;
-                left:5%;
-                right:5%;
 
             }
         }
@@ -467,13 +490,33 @@
                 text-align:center;
             }
         }
+        @include is-sm{
+            li:nth-child(1) .features__overlay{
+                width:250px;
+            }
+            li:nth-child(2) .features__overlay{
+                width:300px;
+            }
+            li:nth-child(3) .features__overlay{
+                width:400px;
+            }
+            li:nth-child(4) .features__overlay{
+                width:280px;
+            }
+            li:nth-child(5) .features__overlay{
+                width:180px;
+            }
+        }
         &__overlay{
             position: absolute;
             height: 3vh;
             width: 110%;
             background-color:$color-overlay;
+            left:0;
+            right:0;
             bottom:13%;
             z-index:-1;
+            margin:0 auto;
             @include is-sp{
                 bottom:45%;
                 height:2vh;
