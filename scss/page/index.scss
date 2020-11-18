@@ -85,7 +85,6 @@
             }
             @include is-sm{
                 @include font-line(16.5);
-                text-align:center;
                 padding:10px 0;
             }
         }
@@ -421,9 +420,6 @@
     }
     .features{
         &__top{
-            @include is-sm{
-                text-align: center;
-            }
             align-items: center;
         }
         &__bottom{
