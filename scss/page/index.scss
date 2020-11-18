@@ -84,6 +84,7 @@
                 padding:10px 0;
             }
             @include is-sm{
+                @include font-line(16.5);
                 text-align:center;
                 padding:10px 0;
             }
