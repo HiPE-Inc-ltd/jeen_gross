@@ -71,6 +71,7 @@
         }
         li{
             display:flex;
+            align-items: center;
             @include is-pc{
                 @include font-line(42);
             }
@@ -83,8 +84,7 @@
                 padding:10px 0;
             }
             @include is-sm{
-                @include font-line(18);
-                display:block !important;
+                @include font-line(16.5);
                 text-align:center;
                 padding:10px 0;
             }
@@ -94,35 +94,13 @@
             width:5%;
             }
             @include is-sm{
-                width:10%;
+                width:30px;
             }
         }
         &__text{
             position: relative;
         }
-        @include is-sm{
-            li:nth-child(1) .checklist__overlay{
-                width:400px;
-            }
-            li:nth-child(2) .checklist__overlay{
-                width:250px;
-            }
-            li:nth-child(3) .checklist__overlay{
-                width:200px;
-            }
-            li:nth-child(4) .checklist__overlay{
-                width:150px;
-            }
-            li:nth-child(5) .checklist__overlay{
-                width:300px;
-            }
-            li:nth-child(6) .checklist__overlay{
-                width:200px;
-            }
-            li:nth-child(7) .checklist__overlay{
-                width:130px;
-            }
-        }
+
         &__overlay{
             position: absolute;
             height: 2vh;
@@ -444,9 +422,9 @@
     .features{
         &__top{
             @include is-sm{
-                display:block!important;
                 text-align: center;
             }
+            align-items: center;
         }
         &__bottom{
             margin-top:14px;
@@ -455,6 +433,10 @@
         &__img{
             width:68px;
             height:68px;
+            @include is-sm{
+                width:40px;
+                height:40px;
+            }
         }
 
         &__title{
@@ -470,8 +452,7 @@
                 @include font-line(22);
             }
             @include is-sm{
-                @include font-line(22);
-                margin-left:0px;
+                @include font-line(18);
             }
 
             margin-left:10px;
@@ -486,27 +467,10 @@
             }
             @include is-sm{
                 @include font-line(16);
-                padding-left:0;
-                text-align:center;
+                padding-left:51px;
             }
         }
-        @include is-sm{
-            li:nth-child(1) .features__overlay{
-                width:250px;
-            }
-            li:nth-child(2) .features__overlay{
-                width:300px;
-            }
-            li:nth-child(3) .features__overlay{
-                width:400px;
-            }
-            li:nth-child(4) .features__overlay{
-                width:280px;
-            }
-            li:nth-child(5) .features__overlay{
-                width:180px;
-            }
-        }
+
         &__overlay{
             position: absolute;
             height: 3vh;
@@ -518,8 +482,7 @@
             z-index:-1;
             margin:0 auto;
             @include is-sp{
-                bottom:45%;
-                height:2vh;
+                height:1.5vh;
             }
             @include is-sm{
                 height: 1vh;
