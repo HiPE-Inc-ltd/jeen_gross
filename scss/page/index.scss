@@ -103,7 +103,7 @@
         &__overlay{
             position: absolute;
             height: 2vh;
-            width: 110%;
+            width: 100%;
             background-color:$color-overlay;
             bottom:13%;
             z-index:-1;
@@ -137,13 +137,18 @@
         z-index:-1;
         width:38.8%;
         @include is-tablet{
-            display:none;   
+            
         }
         @include is-sp{
-            display:none;
+            top:30%;
         }
         @include is-sm{
             display:none;
+        }
+    }
+    .link{
+        @include is-tablet{
+            margin-bottom:50px;
         }
     }
     
@@ -163,10 +168,21 @@
     background-position:0;
     z-index:99;
     padding:100px 0px;
+    &__img{
+        position: absolute;
+        left:-400px;
+        bottom:0;
+        right:0;
+        top:0;
+        max-height: 100%;
+        @include is-tablet{
+            left:-300px;
+        }
+        
+    }
     @include is-tablet{
         background:none;
-        padding-top:100px;
-        padding-bottom:0px;
+        padding:0px;
     }
     @include is-sp{
         background:none;
@@ -180,7 +196,7 @@
     }
     &__left{
         @include is-tablet{
-            width:0%;
+
         }
         @include is-sp{
             width:0%;
@@ -191,8 +207,6 @@
     }
     &__right{
         @include is-tablet{
-            width:90%;
-            margin:0 auto;
         }
         @include is-sp{
             width:90%;
@@ -220,9 +234,9 @@
     z-index:99;
     padding:110px 0px 100px 0px;
     @include is-tablet{
+        margin-top:50px;
         background:none;
-        padding-top:100px;
-        padding-bottom:0px;
+        padding:0px;
     }
     @include is-sp{
         background:none;
@@ -236,8 +250,7 @@
     }
     &__left{
         @include is-tablet{
-            width:90%;
-            margin:0 auto;
+
         }
         @include is-sp{
             width:90%;
@@ -249,8 +262,10 @@
         }
     }
     &__right{
+        align-items:center;
+        transform: translateX(20px);
         @include is-tablet{
-            width:0;
+            
         }
         @include is-sp{
             width:0%;
@@ -259,7 +274,10 @@
             width:0%;
         }
     }
-
+    &__img{
+        position: absolute;
+        right:0;
+    }
 }
   /*
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -470,7 +488,7 @@
         &__overlay{
             position: absolute;
             height: 3vh;
-            width: 110%;
+            width: 100%;
             background-color:$color-overlay;
             left:0;
             right:0;
@@ -482,7 +500,7 @@
             }
             @include is-sm{
                 height: 1vh;
-                width: 110%;
+                width: 100%;
                 bottom:20%;
             }
         }
