@@ -33,6 +33,12 @@
     }
     &__desc{
         padding-top:80px;
+        &--v2{
+            padding-top:0px;
+        }
+        @include is-tablet{
+            padding-top:0;
+        }
         @include is-sp{
             padding-top:40px;
         }

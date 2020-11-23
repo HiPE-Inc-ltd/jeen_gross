@@ -107,3 +107,46 @@
         }
     }
 }
+.c-table02{
+    width:1500px;
+    text-align:center;
+    border-collapse:collapse;
+    border-spacing: 0;
+    &--v2{
+        width:1000px !important;
+    }
+    .body01{
+        &__tr,&__td,&__th{
+            padding:10px 0;   
+        }
+        &__th{
+            background-color: $colortext01;
+            color:$colortext-secondary;
+        }
+        &__tr{
+            border-bottom:1px solid $color-table;
+            border-top:1px solid $color-table;
+        }
+        &__td{
+            border-left:1px dotted $color-table;
+            border-right:1px dotted $color-table;
+        }
+    }
+    .body02{
+        &__tr,&__td,&__th{
+            padding:10px 0;   
+        }
+        &__th{
+            background-color: $colortext03;
+            color:$colortext-secondary;
+        }
+        &__tr{
+            border-bottom:1px solid $color-table;
+            border-top:1px solid $color-table;
+        }
+        &__td{
+            border-left:1px dotted $color-table;
+            border-right:1px dotted $color-table;
+        }
+    }
+}
