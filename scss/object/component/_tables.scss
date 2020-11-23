@@ -3,6 +3,7 @@
     border-collapse:collapse;
     width:100%;
     border-spacing: 0;
+    color:$colortext-primary;
     @include is-pc{
         @include font-line(18);
     }
@@ -104,6 +105,61 @@
         &__td{
             border-left:1px dotted $color-table;
             border-right:1px dotted $color-table;
+        }
+    }
+}
+.c-table02{
+    width:2640px;
+    text-align:center;
+    border-collapse:collapse;
+    border-spacing: 0;
+    &--v2{
+        width:1253px !important;
+    }
+    .body01{
+        &__tr,&__td,&__th{
+            padding:10px 0;   
+        }
+        &__th{
+            background-color: $colortext01;
+            color:$colortext-secondary;
+        }
+        &__tr:first-child{
+            border-top:1px solid $color-table;
+        }
+        &__tr:last-child{
+            border-bottom:1px solid $color-table;
+        }
+        &__tr{
+            border-bottom:1px dotted $color-table;
+            border-top:1px dotted $color-table;
+        }
+        &__td{
+            border-left:1px dotted $color-table;
+            border-right:1px solid $color-table;
+        }
+    }
+    .body02{
+        &__tr,&__td,&__th{
+            padding:10px 0;   
+        }
+        &__th{
+            background-color: $colortext03;
+            color:$colortext-secondary;
+        }
+        &__tr:first-child{
+            border-top:1px solid $color-table;
+        }
+        &__tr:last-child{
+            border-bottom:1px solid $color-table;
+        }
+        &__tr{
+            border-bottom:1px dotted $color-table;
+            border-top:1px dotted $color-table;
+        }
+        &__td{
+            border-left:1px dotted $color-table;
+            border-right:1px solid $color-table;
         }
     }
 }

@@ -27,7 +27,9 @@
         position: absolute;
         bottom:88px;
         left:-5%;
-
+        @include is-tablet{
+            width:80vw;
+        }
     }
 }
   /*
@@ -103,7 +105,7 @@
         &__overlay{
             position: absolute;
             height: 2vh;
-            width: 110%;
+            width: 100%;
             background-color:$color-overlay;
             bottom:13%;
             z-index:-1;
@@ -137,14 +139,13 @@
         z-index:-1;
         width:38.8%;
         @include is-tablet{
-            display:none;   
+            bottom:53%;
+            width:40%;
         }
-        @include is-sp{
-            display:none;
-        }
-        @include is-sm{
-            display:none;
-        }
+    }
+    .link{
+        max-width:780px;
+        margin:0 auto;
     }
     
     
@@ -154,53 +155,28 @@
  CONCEPT
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  */
-.concept{
-    position:relative;
-    background:url('/assets/img/common/bg-concept.png');
-    width:100%;
-    background-size:50%;
-    background-repeat: no-repeat;
-    background-position:0;
-    z-index:99;
-    padding:100px 0px;
-    @include is-tablet{
-        background:none;
-        padding-top:100px;
-        padding-bottom:0px;
+ .concept{
+    position: relative;
+    height: 680px;
+    &__overlay{
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translate(0%, -50%);
+      width: 40vw;
+      z-index:-1;
     }
-    @include is-sp{
-        background:none;
-        padding-top:100px;
-        padding-bottom:0px;
-    }
-    @include is-sm{
-        background:none;
-        padding-top:25px;
-        padding-bottom:0px;
-    }
+    &__inner{}
+    &__top{}
+    &__bottom{}
     &__left{
         @include is-tablet{
-            width:0%;
-        }
-        @include is-sp{
-            width:0%;
-        }
-        @include is-sm{
-            width:0%;
+            width:40%;
         }
     }
     &__right{
         @include is-tablet{
-            width:90%;
-            margin:0 auto;
-        }
-        @include is-sp{
-            width:90%;
-            margin:0 auto;
-        }
-        @include is-sm{
-            width:90%;
-            margin:0 auto;
+            width:60%;
         }
     }
 }
@@ -209,54 +185,26 @@
  COMMITMENT
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  */
-.commitment{
+ .commitment{
     position:relative;
-    background:url('/assets/img/common/bg-commitment.png');
-    width:100%;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position-x: 100%;
-    background-position-y:50%;
-    z-index:99;
-    padding:110px 0px 100px 0px;
-    @include is-tablet{
-        background:none;
-        padding-top:100px;
-        padding-bottom:0px;
-    }
-    @include is-sp{
-        background:none;
-        padding-top:50px;
-        padding-bottom:0px;
-    }
-    @include is-sm{
-        background:none;
-        padding-top:50px;
-        padding-bottom:0px;
+    height: 680px;
+    overflow-x:hidden;
+    &__overlay{
+      position: absolute;
+      width: 40vw;
+      right: 0;
+      top: 50%;
+      transform: translate(0,-50%);
+      z-index:-1;
     }
     &__left{
         @include is-tablet{
-            width:90%;
-            margin:0 auto;
-        }
-        @include is-sp{
-            width:90%;
-            margin:0 auto;
-        }
-        @include is-sm{
-            width:90%;
-            margin:0 auto;
+            width:60%;
         }
     }
     &__right{
         @include is-tablet{
-            width:0;
-        }
-        @include is-sp{
-            width:0%;
-        }
-        @include is-sm{
-            width:0%;
+            width:40%;
         }
     }
 
@@ -267,68 +215,30 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  */
 .pfc{
-    position: relative;
-    background: url('/assets/img/common/bg-pfc.png');
-    width: 100%;
-    background-size: 65%;
-    background-repeat: no-repeat;
-    z-index: 99;
-    background-position-y: 70%;
+    position:relative;
+    height:680px;
+    &__overlay{
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translate(0%, -50%);
+      width: 60vw;
+      z-index:-1;
+      @include is-tablet{
+          display:none;
+      }
+    }
     @include is-tablet{
-        background:none;
-        padding-top:100px;
-        padding-bottom:0px;
-    }
-    @include is-sp{
-        background:none;
-        padding-top:100px;
-        padding-bottom:0px;
-    }
-    @include is-sm{
-        background:none;
-        padding-top:50px;
-        padding-bottom:0px;
-    }
-    &__top{
-        @include is-tablet{
-            width:90%;
-            margin:0 auto;
-            img{width:100%;}
-        }
-        @include is-sp{
-            width:90%;
-            margin:0 auto;
-            img{width:100%;}
-        }
-        @include is-sm{
-            width:90%;
-            margin:0 auto;
-            img{width:100%;}
-        }
-        
+        height: 100%;
     }
     &__left{
         @include is-tablet{
             width:0%;
         }
-        @include is-sp{
-            width:0%;
-        }
-        @include is-sm{
-            width:0%;
-        }
     }
     &__right{
         @include is-tablet{
-            width:90%;
-            margin:0 auto;
-        }
-        @include is-sp{
-            width:90%;
-            margin:0 auto;
-        }
-        @include is-sm{
-            width:90%;
+            width:100%;
             margin:0 auto;
         }
     }
@@ -347,6 +257,9 @@
     }
     &__spacer{
         height: 142px;
+        @include is-tablet{
+            height: 75px;
+        }
         @include is-sm{
             height:50px;
         }
@@ -360,6 +273,22 @@
         }
         @include is-sm{
             overflow-x:scroll;
+        }
+    }
+    @include is-tablet{
+        &__table02:nth-child(1){
+            margin-right:10px;
+        }
+        &__table02:nth-child(2){
+            margin-left:10px;
+        }
+    }
+    &__table02{
+        overflow-x:scroll;
+    }
+    &__wrap{
+        @include is-tablet{
+            height:0;
         }
     }
 }
@@ -391,6 +320,9 @@
     }
     &__top{
         justify-content: center;
+        @include is-tablet{
+            margin:0 0 136px;
+        }
     }
     &__bottom{
         text-align:center;
@@ -418,7 +350,12 @@
     .logo-footer{
         text-align: center;
     }
+    .link{
+        max-width:780px;
+        margin:0 auto;
+    }
     .features{
+        color:$colortext-primary;
         &__top{
             align-items: center;
         }
@@ -470,7 +407,7 @@
         &__overlay{
             position: absolute;
             height: 3vh;
-            width: 110%;
+            width: 100%;
             background-color:$color-overlay;
             left:0;
             right:0;
@@ -572,3 +509,19 @@
         width: 300px !important;
     }
 }
+//SLIDECONT
+.slideConts {
+    transition: 1s;
+  }
+  .slideContsL {
+    transform: translate(-100%,0);
+  }
+  .slideContsR {
+    transform: translate(100%,0);
+  }
+  .slideContsL.show {
+    transform: translate(0, 0);
+  }
+  .slideContsR.show {
+    transform: translate(0, 0);
+  }

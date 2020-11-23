@@ -46,6 +46,7 @@
     &__title{
         text-align:center;
         font-weight:700;
+        color:$colortext-primary;
         @include font-line(35);
         @include is-sm{
             @include font-line(24);

@@ -1,15 +1,16 @@
 .c-btn01{
     padding:0px 50px;
-    border-radius:25px;
+    border-radius:50px;
     color: $colortext-secondary;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
     @include is-pc{
         @include font-line(46);
     }
     @include is-tablet{
-        @include font-line(94);
+        @include font-line(46);
     }
     @include is-sp{
         @include font-line(49);
@@ -27,9 +28,6 @@
     img{
         transform: translateX(36px);
         width: 50px;
-        @include is-tablet{
-            width:64px;
-        }
         @include is-sm{
             width:20px;
         }

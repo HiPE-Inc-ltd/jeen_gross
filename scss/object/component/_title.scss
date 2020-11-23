@@ -33,15 +33,19 @@
     }
     &__desc{
         padding-top:80px;
+        &--v2{
+            padding-top:0px;
+        }
+        @include font-line(18);
+        @include is-tablet{
+            padding-top:0;
+        }
         @include is-sp{
             padding-top:40px;
         }
         @include is-sm{
             padding-top:40px;
             @include font-line(16);
-        }
-        @include is-pc{
-            @include font-line(18);
         }
     }
 }
