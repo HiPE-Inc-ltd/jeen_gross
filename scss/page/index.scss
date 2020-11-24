@@ -255,6 +255,11 @@
     &__title{
         justify-content: center;
     }
+    &__text{
+        @include font-line(22);
+        font-weight:700;
+        color:$colortext-primary;
+    }
     &__spacer{
         height: 142px;
         @include is-tablet{
