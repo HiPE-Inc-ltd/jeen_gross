@@ -151,9 +151,6 @@
         margin:0 auto;
         img{
             width:840px;
-            @include is-tablet{
-                width:640px;
-            }
         }
     }
     
@@ -167,6 +164,9 @@
  .concept{
     position: relative;
     height: 680px;
+    @include is-tablet{
+        height:620px;
+    }
     &__overlay{
       position: absolute;
       top: 50%;
@@ -175,7 +175,11 @@
       width: 40vw;
       z-index:-1;
     }
-    &__inner{}
+    &__inner{
+        @include is-tablet{
+            margin-top:70px;
+        }
+    }
     &__top{}
     &__bottom{}
     &__left{
@@ -198,6 +202,9 @@
     position:relative;
     height: 680px;
     overflow-x:hidden;
+    @include is-tablet{
+        height:620px;
+    }
     &__overlay{
       position: absolute;
       width: 40vw;
@@ -373,9 +380,6 @@
         margin:0 auto;
         img{
             width:840px;
-            @include is-tablet{
-                width:640px;
-            }
         }
     }
     .features{
