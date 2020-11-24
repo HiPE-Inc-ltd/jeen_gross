@@ -1,11 +1,13 @@
 .c-btn01{
     padding:0px 50px;
     border-radius:50px;
-    color: $colortext-secondary;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
+    a{
+        color: $colortext-secondary;
+    }
     @include is-pc{
         @include font-line(46);
     }
