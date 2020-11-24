@@ -121,11 +121,17 @@
     }
     .bubbletext{
         transform:translateY(-5%);
-        @include is-sp{
-            img{width:25%;}
-        }
-        @include is-sm{
-            img{width:30%;}
+        img{
+            width:188px;
+            @include is-tablet{
+                width:151px;
+            }
+            @include is-sp{
+                width:25%;
+            }
+            @include is-sm{
+                width:30%;
+            }
         }
     }
 
@@ -137,13 +143,18 @@
         z-index:-1;
         width:38.8%;
         @include is-tablet{
-            bottom:53%;
+            bottom:48%;
             width:40%;
         }
     }
     .link{
-        max-width:780px;
         margin:0 auto;
+        img{
+            width:840px;
+            @include is-tablet{
+                width:640px;
+            }
+        }
     }
     
     
@@ -358,8 +369,14 @@
 
     }
     .link{
-        max-width:780px;
+
         margin:0 auto;
+        img{
+            width:840px;
+            @include is-tablet{
+                width:640px;
+            }
+        }
     }
     .features{
         color:$colortext-primary;
