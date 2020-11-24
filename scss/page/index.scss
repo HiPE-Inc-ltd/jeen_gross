@@ -19,9 +19,7 @@
     &__logo{
         position: absolute;
         left:5%;
-        @include is-sm{
-            width: 50%;
-        }
+        width:187px;
     }
     &__texts{
         position: absolute;
@@ -261,7 +259,7 @@
         color:$colortext-primary;
     }
     &__spacer{
-        height: 142px;
+        height: 103px;
         @include is-tablet{
             height: 75px;
         }
@@ -334,7 +332,7 @@
         @include is-sm{margin-top:0px !important;}
     }
     &__spacer{
-        height:565px;
+        height:411px;
         @include is-tablet{
             height:0;
         }
@@ -354,6 +352,10 @@
     }
     .logo-footer{
         text-align: center;
+        img{
+            width:560px;
+        }
+
     }
     .link{
         max-width:780px;
@@ -361,6 +363,9 @@
     }
     .features{
         color:$colortext-primary;
+        @include is-tablet{
+            margin-top:60px !important;
+        }
         &__top{
             align-items: center;
         }
@@ -508,8 +513,10 @@
     }
 }
 .slick-slide {
-    
     width: 460px;
+    @include is-tablet{
+        width:570px !important;
+    }
     @include is-sm{
         width: 300px !important;
     }

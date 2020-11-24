@@ -4,9 +4,9 @@
         position:relative;
         z-index:9999;
         margin:0 auto;
-        transform:translateY(43em);
+        transform:translateY(31em);
         @include is-tablet{
-            transform:translateY(42em);
+            transform:translateY(29em);
         }
         @include is-sp{
             transform:translateY(36em);
@@ -28,9 +28,7 @@
         .prev-arrow,
         .next-arrow{
             img{
-                @include is-tablet{
-                    width:25%;
-                }
+                width:77px;
                 @include is-sp{
                     width:25%;
                 }

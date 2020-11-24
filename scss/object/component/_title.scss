@@ -1,12 +1,7 @@
 .c-title{
     &__title{
-        &--70{
-            @include is-sm{width:70%; margin:0 auto;}
-            @include is-sp{width:70%; margin:0 auto;}
-        }
-        &--40{
-            @include is-sm{width:40%; margin:0 auto;}
-            @include is-sp{width:40%; margin:0 auto;}
+        img{
+            height:85.94px;
         }
     }
     &__subtitle{
