@@ -163,10 +163,10 @@
  */
  .concept{
     position: relative;
-    height: 680px;
-    @include is-tablet{
-        height:620px;
-    }
+    // height: 680px;
+    // @include is-tablet{
+    //     height:620px;
+    // }
     &__overlay{
       position: absolute;
       top: 50%;
@@ -174,6 +174,9 @@
       transform: translate(0%, -50%);
       width: 40vw;
       z-index:-1;
+      @include is-tablet{
+          top:55%;
+      }
     }
     &__inner{
         @include is-tablet{
@@ -200,11 +203,11 @@
  */
  .commitment{
     position:relative;
-    height: 680px;
+    // height: 680px;
     overflow-x:hidden;
-    @include is-tablet{
-        height:620px;
-    }
+    // @include is-tablet{
+    //     height:620px;
+    // }
     &__overlay{
       position: absolute;
       width: 40vw;
@@ -212,6 +215,9 @@
       top: 50%;
       transform: translate(0,-50%);
       z-index:-1;
+      @include is-tablet{
+        top:55%;
+    }
     }
     &__left{
         @include is-tablet{
@@ -232,7 +238,7 @@
  */
 .pfc{
     position:relative;
-    height:680px;
+    // height:680px;
     &__overlay{
       position: absolute;
       top: 50%;
