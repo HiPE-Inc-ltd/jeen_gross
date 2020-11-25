@@ -113,8 +113,20 @@
     text-align:center;
     border-collapse:collapse;
     border-spacing: 0;
+    @include is-sp{
+        width:1646px;
+    }
+    @include is-sm{
+        width:1646px;
+    }
     &--v2{
-        width:1253px !important;
+        width:1253px;
+        @include is-sp{
+            width:780px;
+        }
+        @include is-sm{
+            width:780px;
+        }
     }
     .body01{
         &__tr,&__td,&__th{
