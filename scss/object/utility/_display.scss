@@ -34,6 +34,11 @@
         display: none !important;
       }
     }
+    &-sm{
+      @include is-sm{
+        display: none !important;
+      }
+    }
   }
   
   .u-d-f {
