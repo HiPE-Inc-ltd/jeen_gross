@@ -2,7 +2,7 @@
 @import "../core/variables";
 @import "../core/mixins";
 
-  /*
+ /*
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  HERO
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -30,7 +30,7 @@
         }
     }
 }
-  /*
+ /*
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  OBJECTIVES
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -146,6 +146,13 @@
             bottom:50%;
             width:40%;
         }
+        @include is-sp{
+            bottom:50%;
+            width:40%;
+        }
+        @include is-sm{
+            display:none;
+        }
     }
     .link{
         margin:0 auto;
@@ -156,17 +163,13 @@
     
     
 }
-  /*
+ /*
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  CONCEPT
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  */
  .concept{
     position: relative;
-    // height: 680px;
-    // @include is-tablet{
-    //     height:620px;
-    // }
     &__overlay{
       position: absolute;
       top: 50%;
@@ -177,8 +180,21 @@
       @include is-tablet{
           top:55%;
       }
+      @include is-sp{
+          left:-50%;
+          width:86vw;
+          top:55%;
+      }
+      @include is-sm{
+          left:-56%;
+          width:100vw;
+          top:55%;
+      }
     }
     &__inner{
+        @include is-pc{
+            margin-top:100px;
+        }
         @include is-tablet{
             margin-top:70px;
         }
@@ -189,25 +205,33 @@
         @include is-tablet{
             width:40%;
         }
+        @include is-sp{
+            width:40%;
+        }
+        @include is-sm{
+            width:40%;
+        }
     }
     &__right{
         @include is-tablet{
             width:60%;
         }
+        @include is-sp{
+            width:60%;
+        }
+        @include is-sm{
+            width:60%;
+        }
     }
 }
-  /*
+ /*
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  COMMITMENT
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  */
  .commitment{
     position:relative;
-    // height: 680px;
     overflow-x:hidden;
-    // @include is-tablet{
-    //     height:620px;
-    // }
     &__overlay{
       position: absolute;
       width: 40vw;
@@ -217,10 +241,32 @@
       z-index:-1;
       @include is-tablet{
         top:55%;
+      }
+      @include is-sp{
+          right:-32%;
+          width:75vw;
+          top:55%;
+      }
+      @include is-sm{
+          right:-56%;
+          width:100vw;
+          top:55%;
+      }
+      
     }
+    &__inner{
+        @include is-pc{
+            margin-top:100px;
+        }
     }
     &__left{
         @include is-tablet{
+            width:60%;
+        }
+        @include is-sp{
+            width:60%;
+        }
+        @include is-sm{
             width:60%;
         }
     }
@@ -228,17 +274,22 @@
         @include is-tablet{
             width:40%;
         }
+        @include is-sp{
+            width:40%;
+        }
+        @include is-sm{
+            width:40%;
+        }
     }
 
 }
-  /*
+ /*
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  PFC
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
  */
 .pfc{
     position:relative;
-    // height:680px;
     &__overlay{
       position: absolute;
       top: 50%;
@@ -249,12 +300,24 @@
       @include is-tablet{
           display:none;
       }
+      @include is-sp{
+          display:none;
+      }
+      @include is-sm{
+          display:none;
+      }
     }
-    @include is-tablet{
-        height: 100%;
+    &__inner{
+        margin-top:100px;
     }
     &__left{
         @include is-tablet{
+            width:0%;
+        }
+        @include is-sp{
+            width:0%;
+        }
+        @include is-sm{
             width:0%;
         }
     }
@@ -262,6 +325,14 @@
         @include is-tablet{
             width:100%;
             margin:0 auto;
+        }
+        @include is-sp{
+            width:100%;
+            margin:0 auto;
+        }
+        @include is-sm{
+            width:100%;
+            margin: 0 auto;
         }
     }
 }
@@ -276,6 +347,9 @@
     }
     &__title{
         justify-content: center;
+        img{
+            height:85.94px;
+        }
     }
     &__text{
         @include font-line(22);
@@ -291,7 +365,7 @@
             height:50px;
         }
         @include is-sp{
-            height: 50px;
+            height: 75px;
         }
     }
     &__table{
@@ -310,6 +384,23 @@
             margin-left:10px;
         }
     }
+    @include is-sp{
+        &__table02:nth-child(1){
+            margin-right:10px;
+        }
+        &__table02:nth-child(2){
+            margin-left:10px;
+        }
+    }
+    @include is-sm{
+        &__table02:nth-child(1){
+            margin-right:10px;
+        }
+        &__table02:nth-child(2){
+            margin-left:10px;
+        }
+    }
+    
     &__table02{
         overflow-x:scroll;
     }
@@ -340,15 +431,17 @@
     @include is-sm{
         background:none;
     }
-    &__inner{
-        @include is-tablet{overflow:hidden;}
-        @include is-sp{overflow:hidden;}
-        @include is-sm{overflow:hidden;}
-    }
+    &__inner{}
     &__top{
         justify-content: center;
         @include is-tablet{
             margin:0 0 136px;
+        }
+        @include is-sp{
+            margin:0 0 136px;
+        }
+        @include is-sm{
+            margin: 0 0 136px;
         }
     }
     &__bottom{
@@ -456,7 +549,7 @@
             }
             @include is-sm{
                 height: 1vh;
-                width: 110%;
+                width: 100%;
                 bottom:20%;
             }
         }

@@ -15,11 +15,10 @@
         @include font-line(46);
     }
     @include is-sp{
-        @include font-line(49);
+        @include font-line(30);
     }
     @include is-sm{
-        @include font-line(28.8);
-        border-radius: 10px;
+        @include font-line(27);
     }
     &--color01{
         background-color: $colortext01;
@@ -30,6 +29,9 @@
     img{
         transform: translateX(36px);
         width: 50px;
+        @include is-sp{
+            width:30px;
+        }
         @include is-sm{
             width:20px;
         }
