@@ -9,10 +9,10 @@
             transform:translateY(29em);
         }
         @include is-sp{
-            transform:translateY(36em);
+            transform:translateY(27em);
         }
         @include is-sm{
-            transform:translateY(450px);
+            transform:translateY(374px);
         }
         .prev-arrow{
             text-align: left;
@@ -30,10 +30,10 @@
             img{
                 width:77px;
                 @include is-sp{
-                    width:25%;
+                    width:50px;
                 }
                 @include is-sm{
-                    width:25%;
+                    width:50px;
                 }
             }
         }

@@ -25,6 +25,9 @@
         position: absolute;
         bottom:88px;
         left:-5%;
+        @include is-between{
+            width:75vw;
+        }
         @include is-tablet{
             width:80vw;
         }
