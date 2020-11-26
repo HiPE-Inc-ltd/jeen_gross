@@ -27,7 +27,6 @@
     &__body{
         td:nth-child(1){
             width:30%;
-            
         }
     }
     // red 
@@ -109,24 +108,12 @@
     }
 }
 .c-table02{
-    width:2640px;
+    width:100%;
     text-align:center;
     border-collapse:collapse;
     border-spacing: 0;
-    @include is-sp{
-        width:1646px;
-    }
     @include is-sm{
-        width:1646px;
-    }
-    &--v2{
-        width:1253px;
-        @include is-sp{
-            width:780px;
-        }
-        @include is-sm{
-            width:780px;
-        }
+        @include font-line(13);
     }
     .body01{
         &__tr,&__td,&__th{
