@@ -87,7 +87,7 @@
                 padding:10px 0;
             }
             @include is-sm{
-                @include font-line(16.5);
+                @include font-line(16);
                 padding:10px 0;
             }
         }
@@ -102,6 +102,9 @@
         &__text{
             position: relative;
             margin-left:10px;
+            @include is-sm{
+                margin-left:5px;
+            }
         }
 
         &__overlay{
