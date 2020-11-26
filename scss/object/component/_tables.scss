@@ -1,164 +1,243 @@
-.c-table{
-    text-align:center;
-    border-collapse:collapse;
-    width:100%;
+.c-table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
     border-spacing: 0;
-    color:$colortext-primary;
-    @include is-pc{
+    color: $colortext-primary;
+
+    @include is-pc {
         @include font-line(18);
     }
-    @include is-tablet{
+
+    @include is-tablet {
         @include font-line(16);
     }
-    @include is-sp{
-        width:1000px;
+
+    @include is-sp {
+        width: 1000px;
     }
-    @include is-sm{
-        width:1000px;
+
+    @include is-sm {
+        width: 1000px;
         @include font-line(16);
     }
-    &--03{
-        width:100% !important;
+
+    &--03 {
+        width: 100% !important;
     }
-    &__head{
-        color:$colortext-secondary;
+
+    &__head {
+        color: $colortext-secondary;
 
     }
-    &__body{
-        td:nth-child(1){
-            width:30%;
+
+    &__body {
+        td:nth-child(1) {
+            width: 30%;
         }
     }
+
     // red 
-    .head01{
+    .head01 {
         background-color: $colortext01;
-        border-right:1px dotted $color-table;
-        
-        &__tr,&__th{
-            padding:10px 0;   
+        border-right: 1px dotted $color-table;
+
+        &__tr,
+        &__th {
+            padding: 10px 0;
         }
-        &__th{
-            border-left:1px dotted $color-table;
-        }
-    }
-    .body01{
-        &__tr,&__td{
-            padding:10px 0;   
-        }
-        &__tr{
-            border:1px solid $color-table;
-            border-left:1px dotted $color-table;
-            border-right:1px dotted $color-table;
-            border-top:none;
-        }
-        &__td{
-            border-left:1px dotted $color-table;
-            
-            &--title{}
+
+        &__th {
+            border-left: 1px dotted $color-table;
         }
     }
+
+    .body01 {
+
+        &__tr,
+        &__td {
+            padding: 10px 0;
+        }
+
+        &__tr {
+            border: 1px solid $color-table;
+            border-left: 1px dotted $color-table;
+            border-right: 1px dotted $color-table;
+            border-top: none;
+        }
+
+        &__td {
+            border-left: 1px dotted $color-table;
+
+            &--title {}
+        }
+    }
+
     //green
-    .head02{
-        background-color:$colortext03;
-        border-right:1px dotted $color-table;
-        &__tr,&__th{
-            padding:10px 0;   
+    .head02 {
+        background-color: $colortext03;
+        border-right: 1px dotted $color-table;
+
+        &__tr,
+        &__th {
+            padding: 10px 0;
         }
-        &__th{
-            border-left:1px dotted $color-table;
+
+        &__th {
+            border-left: 1px dotted $color-table;
         }
     }
-    .body02{
-        &__tr,&__td{
-            padding:10px 0;   
+
+    .body02 {
+
+        &__tr,
+        &__td {
+            padding: 10px 0;
         }
-        &__tr{
-            border-bottom:1px solid $color-table;
-            border-top:none;
+
+        &__tr {
+            border-bottom: 1px solid $color-table;
+            border-top: none;
         }
-        &__td{
-            border-left:1px dotted $color-table;
-            border-right:1px dotted $color-table;
+
+        &__td {
+            border-left: 1px dotted $color-table;
+            border-right: 1px dotted $color-table;
         }
     }
 
     // Black carousel slider
-    .head03{
-        background-color:#231815;
-        border-right:1px dotted $color-table;
-        &__tr,&__th{
-            padding:10px 0;   
+    .head03 {
+        background-color: #231815;
+        border-right: 1px dotted $color-table;
+
+        &__tr,
+        &__th {
+            padding: 10px 0;
+
+            @include is-sm {
+                @include font-line(12, 12);
+            }
         }
-        &__th{
-            border-left:1px dotted $color-table;
+
+        &__th {
+            border-left: 1px dotted $color-table;
+
+            @include is-sm {
+                width: calc(100% / 4);
+            }
         }
     }
-    .body03{
-        &__tr,&__td{
-            padding:10px 0;   
+
+    .body03 {
+
+        &__tr,
+        &__td {
+            padding: 10px 0;
         }
-        &__tr{
-            border-bottom:1px solid $color-table;
-            border-top:none;
+
+        &__tr {
+            border-bottom: 1px solid $color-table;
+            border-top: none;
         }
-        &__td{
-            border-left:1px dotted $color-table;
-            border-right:1px dotted $color-table;
+
+        &__td {
+            border-left: 1px dotted $color-table;
+            border-right: 1px dotted $color-table;
+            position: relative;
+
+            &:first-child {
+                @include is-sm {
+                    @include font-line(12, 10);
+                }
+
+                .unit {
+                    @include is-sm {
+                        @include font-line(9, 10);
+                    }
+                }
+            }
+
+            &:not(:first-child) {
+                @include is-sm {
+                    @include font-line(13, 13);
+                }
+            }
         }
     }
 }
-.c-table02{
-    width:100%;
-    text-align:center;
-    border-collapse:collapse;
+
+.c-table02 {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
     border-spacing: 0;
-    @include is-sm{
+
+    @include is-sm {
         @include font-line(13);
     }
-    .body01{
-        &__tr,&__td,&__th{
-            padding:10px 0;   
+
+    .body01 {
+
+        &__tr,
+        &__td,
+        &__th {
+            padding: 10px 0;
         }
-        &__th{
+
+        &__th {
             background-color: $colortext01;
-            color:$colortext-secondary;
+            color: $colortext-secondary;
         }
-        &__tr:first-child{
-            border-top:1px solid $color-table;
+
+        &__tr:first-child {
+            border-top: 1px solid $color-table;
         }
-        &__tr:last-child{
-            border-bottom:1px solid $color-table;
+
+        &__tr:last-child {
+            border-bottom: 1px solid $color-table;
         }
-        &__tr{
-            border-bottom:1px dotted $color-table;
-            border-top:1px dotted $color-table;
+
+        &__tr {
+            border-bottom: 1px dotted $color-table;
+            border-top: 1px dotted $color-table;
         }
-        &__td{
-            border-left:1px dotted $color-table;
-            border-right:1px solid $color-table;
+
+        &__td {
+            border-left: 1px dotted $color-table;
+            border-right: 1px solid $color-table;
         }
     }
-    .body02{
-        &__tr,&__td,&__th{
-            padding:10px 0;   
+
+    .body02 {
+
+        &__tr,
+        &__td,
+        &__th {
+            padding: 10px 0;
         }
-        &__th{
+
+        &__th {
             background-color: $colortext03;
-            color:$colortext-secondary;
+            color: $colortext-secondary;
         }
-        &__tr:first-child{
-            border-top:1px solid $color-table;
+
+        &__tr:first-child {
+            border-top: 1px solid $color-table;
         }
-        &__tr:last-child{
-            border-bottom:1px solid $color-table;
+
+        &__tr:last-child {
+            border-bottom: 1px solid $color-table;
         }
-        &__tr{
-            border-bottom:1px dotted $color-table;
-            border-top:1px dotted $color-table;
+
+        &__tr {
+            border-bottom: 1px dotted $color-table;
+            border-top: 1px dotted $color-table;
         }
-        &__td{
-            border-left:1px dotted $color-table;
-            border-right:1px solid $color-table;
+
+        &__td {
+            border-left: 1px dotted $color-table;
+            border-right: 1px solid $color-table;
         }
     }
 }
