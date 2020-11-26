@@ -76,7 +76,7 @@
             display:flex;
             align-items: center;
             @include is-pc{
-                @include font-line(42);
+                @include font-line(40);
             }
             @include is-tablet{
                 @include font-line(30);
