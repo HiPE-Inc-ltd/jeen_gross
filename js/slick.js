@@ -26,6 +26,15 @@ $('.center').slick({
           centerPadding: '40px',
           slidesToShow: 1
         }
+      },
+      {
+        breakpoint: 420,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0',
+          slidesToShow: 1
+        }
       }
     ]
   });
