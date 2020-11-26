@@ -101,6 +101,7 @@
         }
         &__text{
             position: relative;
+            margin-left:10px;
         }
 
         &__overlay{
@@ -123,7 +124,7 @@
         }
     }
     .bubbletext{
-        transform:translateY(-5%);
+        transform:translateY(-10%);
         img{
             width:188px;
             @include is-tablet{
@@ -150,7 +151,7 @@
             width:40%;
         }
         @include is-sp{
-            bottom:50%;
+            bottom:51%;
             width:40%;
         }
         @include is-sm{
@@ -371,14 +372,7 @@
             height: 75px;
         }
     }
-    &__table{
-        @include is-sp{
-            overflow-x:scroll;
-        }
-        @include is-sm{
-            overflow-x:scroll;
-        }
-    }
+    &__table{}
     @include is-tablet{
         &__table02:nth-child(1){
             margin-right:10px;
@@ -388,20 +382,16 @@
         }
     }
     @include is-sp{
-        &__table02:nth-child(1){
+        &__table02:first-child{
             margin-right:10px;
         }
-        &__table02:nth-child(2){
-            margin-left:10px;
-        }
+
     }
     @include is-sm{
-        &__table02:nth-child(1){
-            margin-right:10px;
+        &__table02:first-child{
+            margin-right:5px;
         }
-        &__table02:nth-child(2){
-            margin-left:10px;
-        }
+
     }
     
     &__table02{
@@ -441,10 +431,10 @@
             margin:0 0 136px;
         }
         @include is-sp{
-            margin:0 0 136px;
+            margin:0 0 50px;
         }
         @include is-sm{
-            margin: 0 0 136px;
+            margin: 0 0 50px;
         }
     }
     &__bottom{
@@ -489,12 +479,33 @@
         @include is-tablet{
             margin-top:60px !important;
         }
+        @include is-sp{
+            margin-top:25px !important;
+        }
+        @include is-sm{
+            margin-top:20px !important;
+        }
         &__top{
             align-items: center;
         }
         &__bottom{
             margin-top:14px;
-            margin-bottom:86px;
+            margin-bottom:45px;
+            @include is-pc{
+                margin-bottom:84px;
+            }
+            @include is-tablet{
+                margin-top:10px;
+                margin-bottom:30px;
+            }
+            @include is-sp{
+                margin-top:0px;
+                margin-bottom:20px;
+            }
+            @include is-sm{
+                margin-top:0px;
+                margin-bottom:20px;
+            }
         }
         &__img{
             width:68px;
@@ -518,7 +529,7 @@
                 @include font-line(22);
             }
             @include is-sm{
-                @include font-line(18);
+                @include font-line(17);
             }
 
             margin-left:10px;
@@ -644,7 +655,11 @@
         width: 300px !important;
     }
 }
-//SLIDECONT
+ /*
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ SLIDECONT by mukuchi
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ */
 .slideConts {
     transition: 1s;
   }
