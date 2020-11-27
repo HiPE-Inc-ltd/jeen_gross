@@ -185,6 +185,7 @@
         &__th {
             background-color: $colortext01;
             color: $colortext-secondary;
+            width:calc(100%/2);
         }
 
         &__tr:first-child {
@@ -217,6 +218,7 @@
         &__th {
             background-color: $colortext03;
             color: $colortext-secondary;
+            width:calc(100%/2);
         }
 
         &__tr:first-child {
