@@ -149,6 +149,7 @@
                 }
 
                 .unit {
+                    @include font-line(12,10);
                     @include is-sm {
                         @include font-line(9, 10);
                     }
