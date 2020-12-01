@@ -9,7 +9,7 @@
  */
 .hero{
     position:relative;
-    background:url("http://groovy-design.sakura.ne.jp/guidefood/assets/img/common/top-img.png");
+    background:url("http://guidefood.net/assets/img/common/top-img.png");
     width:100%;
     height:100vh;
     background-size: cover;
@@ -40,7 +40,7 @@
  */
 .objectives{
     position:relative;
-    background:url('http://groovy-design.sakura.ne.jp/guidefood/assets/img/common/bg-objectives.png');
+    background:url('http://guidefood.net/assets/img/common/bg-objectives.png');
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -180,20 +180,21 @@
     &__overlay{
       position: absolute;
       top: 50%;
-      left: 0%;
+      left: -15%;
       transform: translate(0%, -50%);
-      width: 40vw;
+      width: 63vw;
       z-index:-1;
       @include is-tablet{
           top:55%;
       }
       @include is-sp{
           left:-50%;
-          width:86vw;
+          width:100vw;
           top:55%;
       }
       @include is-sm{
           position: relative;
+          left:0%;
           width:100%;
           transform: translate(0%, 0%);
       }
@@ -434,7 +435,7 @@
  */
 .footer01{
     position:relative;
-    background:url('http://groovy-design.sakura.ne.jp/guidefood/assets/img/common/bg-footer.png');
+    background:url('http://guidefood.net/assets/img/common/bg-footer.png');
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: 100% 0%;
@@ -657,7 +658,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                content:url('http://groovy-design.sakura.ne.jp/guidefood/assets/img/common/btn.svg');
+                content:url('http://guidefood.net/assets/img/common/btn.svg');
                 width: 20px;
                 height: 20px;
                 line-height: 20px;
@@ -666,7 +667,7 @@
             }
         }
         &.slick-active button:before {
-            content:url('http://groovy-design.sakura.ne.jp/guidefood/assets/img/common/btn-active.svg');
+            content:url('http://guidefood.net/assets/img/common/btn-active.svg');
         }
     }
 }
