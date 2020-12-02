@@ -6,7 +6,7 @@
     color: $colortext-primary;
 
     @include is-pc {
-        @include font-line(18);
+        @include font-line(17);
     }
 
     @include is-tablet {
@@ -19,7 +19,7 @@
 
     @include is-sm {
         width: 1000px;
-        @include font-line(16);
+        @include font-line(12);
     }
 
     &--03 {
@@ -107,60 +107,36 @@
     }
 
     // Black carousel slider
-    .head03 {
-        background-color: #231815;
-        border-right: 1px dotted $color-table;
-
-        &__tr,
-        &__th {
-            padding: 10px 0;
-
-            @include is-sm {
-                @include font-line(12, 12);
-            }
-        }
-
-        &__th {
-            border-left: 1px dotted $color-table;
-            width: calc(100% / 4);
-        }
-    }
 
     .body03 {
-
         &__tr,
-        &__td {
+        &__td,
+        &__th {
             padding: 10px 0;
+            width: calc(100% / 3);
+        }
+
+        &__th {
+            background-color: #231815;
+            color: $colortext-secondary;
+        }
+
+        &__tr:first-child {
+            border-top: 1px solid $color-table;
+        }
+
+        &__tr:last-child {
+            border-bottom: 1px solid $color-table;
         }
 
         &__tr {
-            border-bottom: 1px solid $color-table;
-            border-top: none;
+            border-bottom: 1px dotted $color-table;
+            border-top: 1px dotted $color-table;
         }
 
         &__td {
             border-left: 1px dotted $color-table;
-            border-right: 1px dotted $color-table;
-            position: relative;
-
-            &:first-child {
-                @include is-sm {
-                    @include font-line(12, 10);
-                }
-
-                .unit {
-                    @include font-line(12,10);
-                    @include is-sm {
-                        @include font-line(9, 10);
-                    }
-                }
-            }
-
-            &:not(:first-child) {
-                @include is-sm {
-                    @include font-line(13, 13);
-                }
-            }
+            border-right: 1px solid $color-table;
         }
     }
 }
