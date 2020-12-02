@@ -108,22 +108,7 @@
         }
 
         &__overlay{
-            position: absolute;
-            height: 2vh;
-            width: 100%;
-            background-color:$color-overlay;
-            bottom:13%;
-            z-index:-1;
-            left:0;
-            right:0;
-            margin:0 auto;
-            @include is-sp{
-                height:1.15vh;
-            }
-            @include is-sm{
-                height: 1vh;
-
-            }
+            background: linear-gradient(to top, $color-overlay 40%, transparent 0%);
         }
     }
     .bubbletext{
@@ -574,23 +559,7 @@
         }
 
         &__overlay{
-            position: absolute;
-            height: 3vh;
-            width: 100%;
-            background-color:$color-overlay;
-            left:0;
-            right:0;
-            bottom:13%;
-            z-index:-1;
-            margin:0 auto;
-            @include is-sp{
-                height:1.5vh;
-            }
-            @include is-sm{
-                height: 1vh;
-                width: 100%;
-                bottom:20%;
-            }
+            background: linear-gradient(to top, $color-overlay 40%, transparent 0%);
         }
     }
 }
