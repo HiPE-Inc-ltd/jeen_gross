@@ -45,9 +45,9 @@
         text-align:center;
         font-weight:700;
         color:$colortext-primary;
-        @include font-line(35);
+        @include font-line(30);
         @include is-sm{
-            @include font-line(24);
+            @include font-line(20);
         }
     }
     &__img{

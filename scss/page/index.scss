@@ -642,8 +642,15 @@
 }
 .slick-slide {
     width: 460px;
+    height:100%;
+    @include is-pc{
+        height:919px;
+    }
     @include is-tablet{
         width:570px !important;
+    }
+    @include is-sp{
+        height:893px;
     }
     @include is-sm{
         width: 300px !important;
